@@ -1,0 +1,9 @@
+CLAUDE.md
+docs/
+img/src/
+img/variants/
+img/*.mp4
+*.bak
+*.bak2
+*.bak3
+.DS_Store
