@@ -97,8 +97,12 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
   <input id="f-place" maxlength="160" autocomplete="address-level2">
   <label for="f-address"><span class="ru">Адрес доставки</span><span class="en">Delivery address</span></label>
   <textarea id="f-address" maxlength="300" autocomplete="street-address"></textarea>
-  <label for="f-phone"><span class="ru">Телефон</span><span class="en">Phone</span></label>
+  <label for="f-unit"><span class="ru">Квартира, подъезд, этаж (или «частный дом»)</span><span class="en">Apartment, entrance, floor (or “private house”)</span></label>
+  <input id="f-unit" maxlength="120">
+  <label for="f-phone"><span class="ru">Телефон (WhatsApp или Telegram)</span><span class="en">Phone (WhatsApp or Telegram)</span></label>
   <input id="f-phone" maxlength="40" inputmode="tel" autocomplete="tel">
+  <label for="f-instagram"><span class="ru">Instagram, по желанию</span><span class="en">Instagram, optional</span></label>
+  <input id="f-instagram" maxlength="60" autocapitalize="off">
   <label for="f-comment"><span class="ru">Пожелания, если есть</span><span class="en">Notes, if any</span></label>
   <textarea id="f-comment" maxlength="300"></textarea>
   <div id="pmwrap" hidden>
@@ -199,7 +203,7 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
 
   function readForm(){
     var ok=true,d={items:cart,lang:lang};
-    [['name',1],['place',1],['address',1],['phone',1],['comment',0]].forEach(function(f){
+    [['name',1],['place',1],['address',1],['unit',0],['phone',1],['instagram',0],['comment',0]].forEach(function(f){
       var el=$('f-'+f[0]),v=el.value.trim();el.classList.toggle('bad',!!f[1]&&!v);if(f[1]&&!v)ok=false;if(v)d[f[0]]=v});
     if(!ok){var bad=document.querySelector('.bad');if(bad)bad.scrollIntoView({block:'center',behavior:'smooth'});haptic('err');return null}
     if(pay)d.pay=pay;return d}
