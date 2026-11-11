@@ -7,3 +7,5 @@ img/*.mp4
 *.bak2
 *.bak3
 .DS_Store
+herbs-variants.html
+.env
