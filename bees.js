@@ -11,13 +11,13 @@
     '.bz-hex i.in{opacity:1;transform:none}' +
     '.bz-hive{max-width:340px;margin:0 auto}.bz-hbar{height:10px;background:rgba(201,169,97,.14);margin:0 0 12px;overflow:hidden}.bz-hbar i{display:block;height:100%;background:linear-gradient(90deg,var(--g),var(--g2));transform-origin:left;transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}.bz-hbar.in i{transform:none}' +
     '.bz-cap{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--f3);text-align:center;line-height:1.6}' +
-    '.bz-facts{border-top:1px solid var(--l);margin-top:22px}' +
-    '.bz-fact{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;align-items:center;padding:18px 0;border-bottom:1px solid var(--l)}' +
-    '.bz-fact svg{width:52px;height:52px;stroke:var(--g);fill:none;stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}' +
+    '.bz-facts{border-top:1px solid var(--l);margin-top:16px}' +
+    '.bz-fact{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--l)}' +
+    '.bz-fact svg{width:40px;height:40px;stroke:var(--g);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}' +
     '.bz-fact svg .fill{fill:var(--g);stroke:none}' +
     '.bz-fact svg .orb{stroke-dasharray:3 4;opacity:.75}' +
-    '.bz-fact b{display:block;font-family:Cormorant,Georgia,serif;font-weight:300;font-size:clamp(32px,9vw,40px);line-height:1;color:var(--g2);font-variant-numeric:lining-nums;white-space:nowrap}' +
-    '.bz-fact span{display:block;font-size:14px;line-height:1.4;color:var(--f2);margin-top:5px}' +
+    '.bz-fact b{display:block;font-family:Cormorant,Georgia,serif;font-weight:300;font-size:clamp(27px,7.6vw,33px);line-height:1;color:var(--g2);font-variant-numeric:lining-nums;white-space:nowrap}' +
+    '.bz-fact span{display:block;font-size:13.5px;line-height:1.35;color:var(--f2);margin-top:3px}' +
     '.bz-spoon{margin-top:26px}' +
     '.bz-spoon h3{font-family:Cormorant,Georgia,serif;font-weight:400;font-size:25px;line-height:1.15;color:var(--f);margin:0;font-variant-numeric:lining-nums}' +
     '.bz-bar{display:flex;height:16px;margin:16px 0 12px;gap:2px}' +
@@ -49,11 +49,14 @@
     return dec(lo / 1000, lang) + '–' + dec(hi / 1000, lang) + (lang === 'ru' ? ' г' : ' g');
   }
   var ICON = {
-    one: '<svg viewBox="0 0 52 52"><ellipse cx="26" cy="29" rx="6" ry="9"/><path d="M21 26h10M21 31h10M26 20v-4"/><path d="M20 24c-7-4-10-1-9 3s6 3 9 1M32 24c7-4 10-1 9 3s-6 3-9 1"/><path class="orb" d="M6 44c10-8 30-8 40 0"/></svg>',
-    amino: '<svg viewBox="0 0 52 52"><path d="M26 8l9 5v10l-9 5-9-5V13z"/><path d="M17 23l-8 5v9l8 5 9-5v-9M35 23l8 5v9l-8 5-9-5"/></svg>',
-    bee: '<svg viewBox="0 0 52 52"><ellipse cx="26" cy="30" rx="8" ry="12"/><path d="M19 26h14M18.500 31h15M20 36h12M26 18v-5M23 13l-4-5M29 13l4-5"/><path d="M18 24C9 18 5 22 6 27s8 5 12 2M34 24c9-6 13-2 12 3s-8 5-12 2"/></svg>',
-    flower: '<svg viewBox="0 0 52 52"><circle class="fill" cx="26" cy="26" r="4.500"/><path d="M26 20c-5-10 5-10 0-16M26 32c5 10-5 10 0 16M20 26c-10 5-10-5-16 0M32 26c10-5 10 5 16 0M21.500 21.500c-10-4-4-10-11-11M30.500 30.500c10 4 4 10 11 11M21.500 30.500c-4 10-10 4-11 11M30.500 21.500c4-10 10-4 11-11"/></svg>',
-    spoon: '<svg viewBox="0 0 52 52"><ellipse cx="17" cy="17" rx="9" ry="11" transform="rotate(-45 17 17)"/><path d="M24 24l20 20"/><path class="fill" d="M12 16c3-3 7-3 10 0-1 4-4 6-7 6s-3-3-3-6z" opacity=".5"/></svg>'
+    // a bee seen from above: head, striped body, two pairs of wings, a dotted flight path
+    one: '<svg viewBox="0 0 52 52"><circle cx="26" cy="15" r="4"/><path d="M24 11.500l-3-4M28 11.500l3-4"/><ellipse cx="26" cy="29" rx="6.500" ry="10.500"/><path d="M20 25h12M19.700 30h12.600M21 35h10"/><path d="M20 22C11 14 4 17 5 23s9 6 15 2M32 22c9-8 16-5 15 1s-9 6-15 2"/><path class="orb" d="M8 46c9-5 27-5 36 0"/></svg>',
+    // amino acid: a small molecule, atoms and bonds
+    amino: '<svg viewBox="0 0 52 52"><path d="M14 30l10-6 10 6M24 24V13M34 30v10M14 30v8"/><circle class="fill" cx="24" cy="24" r="3.200"/><circle class="fill" cx="14" cy="30" r="3.200"/><circle class="fill" cx="34" cy="30" r="3.200"/><circle cx="24" cy="10" r="3.200"/><circle cx="34" cy="43" r="3.200"/><circle cx="14" cy="41" r="3.200"/></svg>',
+    // a five-petal mountain flower with a stem and a leaf
+    flower: '<svg viewBox="0 0 52 52"><circle class="fill" cx="26" cy="19" r="3.400"/><ellipse cx="26" cy="9.500" rx="4" ry="5.500"/><ellipse cx="26" cy="9.500" rx="4" ry="5.500" transform="rotate(72 26 19)"/><ellipse cx="26" cy="9.500" rx="4" ry="5.500" transform="rotate(144 26 19)"/><ellipse cx="26" cy="9.500" rx="4" ry="5.500" transform="rotate(216 26 19)"/><ellipse cx="26" cy="9.500" rx="4" ry="5.500" transform="rotate(288 26 19)"/><path d="M26 31v17M26 42c-7 0-10-4-11-8 6 0 10 3 11 8z"/></svg>',
+    // a teaspoon with honey in the bowl and a drop falling
+    spoon: '<svg viewBox="0 0 52 52"><ellipse cx="16" cy="15" rx="8.500" ry="11" transform="rotate(-45 16 15)"/><path d="M22.500 21.500l22 22"/><path class="fill" d="M9.500 15c3.500-2.500 9-2.500 13 0-1 5-4.500 8-8 8s-5-4-5-8z" opacity=".55"/><path class="fill" d="M13 36c1.800 2.600 2.600 4 2.600 5.200a2.600 2.600 0 0 1-5.200 0c0-1.200.8-2.600 2.600-5.200z"/></svg>'
   };
   function orbit(laps) {
     var n = Math.max(1, Math.min(5, Math.ceil(laps))), o = '';
@@ -92,16 +95,8 @@
         '<div class="bz-fact">' + ICON.one + '<div><b>' + L('≈ 110 км', '≈ 110 km') + '</b><span>' + L('пролетела каждая пчела и села на ≈\u00a02\u00a0600 цветков', 'flown by each bee, landing on ≈\u00a02,600 flowers') + '</span></div></div>' +
         '<div class="bz-fact">' + ICON.spoon + '<div><b data-k="spoons"></b><span>' + L(ruPl(st.spoons, 'чайная ложка', 'чайные ложки', 'чайных ложек') + ': по одной в день хватит на ', 'teaspoons: one a day lasts ') + fmt(st.spoons, lang) + L(' ' + ruPl(st.spoons, 'день', 'дня', 'дней'), ' days') + '</span></div></div>' +
         '<div class="bz-fact">' + ICON.amino + '<div><b>≈ ' + aminoText(g, lang) + '</b><span>' + L('аминокислот в этом объёме, больше всего пролина', 'of amino acids in this amount, mostly proline') + '</span></div></div>' +
-      '</div>' +
-      '<div class="bz-spoon"><h3>' + L('В одной чайной ложке · 7 г · ≈ 21 ккал', 'In one teaspoon · 7 g · ≈ 21 kcal') + '</h3>' +
-        '<div class="bz-bar">' + seg.map(function (s) { return '<i style="flex:' + s[1] + ';background:' + s[2] + '"></i>'; }).join('') + '</div>' +
-        '<div class="bz-leg">' + seg.map(function (s) { return '<div><i style="background:' + s[2] + '"></i>' + s[0] + ' <b>' + dec(s[1], lang) + L(' г', ' g') + '</b></div>'; }).join('') + '</div>' +
-        '<p class="bz-ratio">' + L('Фруктоза к глюкозе <b>≈ 1,15 : 1</b> · влажность <b>16,2 %</b>', 'Fructose to glucose <b>≈ 1.15 : 1</b> · moisture <b>16.2%</b>') + '</p>' +
-        '<p class="bz-p">' + L('В каждой ложке ≈\u00a031\u00a0000 посадок на цветок и труд двенадцати пчёл за всю жизнь. Фруктозы больше, чем глюкозы; обе — простые сахара, организму не нужно их расщеплять. Влажность 16,2 % — по нашему протоколу, при допуске до 20 %.',
-                                'Each spoonful holds ≈ 31,000 landings on flowers and the life’s work of twelve bees. There is more fructose than glucose; both are simple sugars the body does not need to break down. Moisture is 16.2% by our lab report, against a limit of 20%.') + '</p></div>' +
-      '<p class="bz-src">' + L('Оценки труда пчёл: Университет Джорджии, Университет Флориды. Сахара и аминокислоты: типичный мёд по USDA и опубликованным исследованиям. Влажность: наш протокол KG/080.26.00022.',
-                                'Bee-work estimates: University of Georgia, University of Florida. Sugars and amino acids: typical honey per USDA and published studies. Moisture: our lab report KG/080.26.00022.') + '</p>';
-    setTimeout(function () { el.querySelector('.bz-bar').classList.add('in'); el.querySelector('.bz-hbar').classList.add('in'); }, 250);
+      '</div>';
+    setTimeout(function () { el.querySelector('.bz-hbar').classList.add('in'); }, 250);
     countUp(el.querySelector('[data-k=bees]'), st.bees, function (v) { return '≈ ' + fmt(Math.round(v / 10) * 10, lang); });
     countUp(el.querySelector('[data-k=flowers]'), st.flowers, function (v) { return '≈ ' + flowersText(v, lang); });
     countUp(el.querySelector('[data-k=km]'), st.km, function (v) { return '≈ ' + fmt(Math.round(v / 100) * 100, lang) + L(' км', ' km'); });

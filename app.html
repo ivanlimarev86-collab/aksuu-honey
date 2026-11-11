@@ -175,7 +175,7 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
     update()}
   function update(){
     var t=total(),g=grams();$('total').textContent='$'+t;
-    $('live').textContent=g?'≈ '+fmt(bees(g))+L(' пчёл · ',' bees · ')+flowersText(g)+L(' цветков',' flowers'):'';
+    $('live').textContent='';
     var go=$('go');go.disabled=!t;
     go.textContent=step===1?(canSend?L('Далее','Next'):L('Оформить','Order')):step===2?L('Оформить','Order'):(canSend?L('Готово','Done'):L('Продолжить в чате','Continue in chat'))}
   function thanks(){
