@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0a0d0b">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="bees.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -108,15 +109,8 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
 <main id="s3" class="ty" hidden>
   <h1><span class="ru">Спасибо</span><span class="en">Thank you</span></h1>
   <p class="lead" id="ty-lead"></p>
-  <div class="hexes" id="hexes"></div>
-  <p class="hexnote" id="hexnote"></p>
-  <div class="facts">
-    <div class="fact"><svg viewBox="0 0 40 40"><ellipse cx="20" cy="23" rx="7" ry="10"/><path d="M14 20h12M13.500 25h13M20 13V9M17 9l-3-4M23 9l3-4"/><path d="M13.500 19C7 15 4 18 5 22s6 3 8.500 1M26.500 19C33 15 36 18 35 22s-6 3-8.500 1"/></svg><div><b id="n-bees">0</b><span id="t-bees"></span></div></div>
-    <div class="fact"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="4"/><path d="M20 16c-3-7 3-7 0-12M20 24c3 7-3 7 0 12M16 20c-7 3-7-3-12 0M24 20c7-3 7 3 12 0M17 17c-7-3-3-7-8-8M23 23c7 3 3 7 8 8M17 23c-3 7-7 3-8 8M23 17c3-7 7-3 8-8"/></svg><div><b id="n-flowers">0</b><span id="t-flowers"></span></div></div>
-    <div class="fact"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13"/><path d="M7 20h26M20 7c5 4 5 22 0 26M20 7c-5 4-5 22 0 26"/><path d="M3 12c8-8 26-8 34 0" stroke-dasharray="2 3"/></svg><div><b id="n-km">0</b><span id="t-km"></span></div></div>
-  </div>
+  <div id="bz" style="margin-top:26px"></div>
   <p class="next" id="ty-next"></p>
-  <p class="note"><span class="ru">Оценка пчеловодов: одна пчела за жизнь приносит около 1/12 чайной ложки мёда.</span><span class="en">A beekeepers’ estimate: one bee brings about 1/12 of a teaspoon of honey in her lifetime.</span></p>
 </main>
 
 <div class="bar" id="bar">
@@ -178,20 +172,10 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
     $('live').textContent=g?'≈ '+fmt(bees(g))+L(' пчёл · ',' bees · ')+flowersText(g)+L(' цветков',' flowers'):'';
     var go=$('go');go.disabled=!t;
     go.textContent=step===1?(canSend?L('Далее','Next'):L('Оформить','Order')):step===2?L('Оформить','Order'):(canSend?L('Готово','Done'):L('Продолжить в чате','Continue in chat'))}
-  function countUp(el,to,text){var t0=null,d=1100;function f(ts){if(!t0)t0=ts;var k=Math.min((ts-t0)/d,1);k=1-Math.pow(1-k,3);el.textContent=text(to*k);if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
   function thanks(){
-    var g=grams(),b=bees(g),km=Math.round(g*88500/454/100)*100,laps=km/40075;
+    var g=grams();
     $('ty-lead').textContent=L('Вот что стоит за вашим заказом: ','Here is what stands behind your order: ')+dec(g/1000)+L(' кг мёда',' kg of honey');
-    var unit=[10,25,50,100,250,500,1000,2500,5000].filter(function(u){return b/u<=96})[0]||10000,n=Math.max(1,Math.round(b/unit));
-    var hx=$('hexes');hx.innerHTML=new Array(n+1).join('<i></i>');
-    [].forEach.call(hx.children,function(el,i){setTimeout(function(){el.classList.add('in')},60+i*Math.min(22,1400/n))});
-    $('hexnote').textContent=L('Одна сота: ','One cell: ')+fmt(unit)+L(' пчёл',' bees');
-    countUp($('n-bees'),b,function(v){return '≈ '+fmt(Math.round(v/10)*10)});
-    $('t-bees').textContent=L('пчёл прожили всю жизнь, собирая этот мёд','bees spent their whole lives gathering this honey');
-    var f=g*2e6/454;countUp($('n-flowers'),f,function(v){return '≈ '+(f>=1e6?dec(v/1e6)+L(' млн',' M'):fmt(Math.round(v/1000)*1000))});
-    $('t-flowers').textContent=L('цветков они облетели','flowers they visited');
-    countUp($('n-km'),km,function(v){return '≈ '+fmt(Math.round(v/100)*100)+L(' км',' km')});
-    $('t-km').textContent=L('полёта: ','of flight: ')+dec(laps)+L(' оборота вокруг Земли',' times around the Earth');
+    AkBees.render($('bz'),g,lang);
     $('ty-next').textContent=canSend?L('Нажмите «Готово»: заказ на $'+total()+' уйдёт в чат. Там будет номер заказа и оплата.','Press “Done”: your $'+total()+' order goes to the chat. You will find the order number and payment there.')
       :L('Нажмите «Продолжить в чате»: бот спросит адрес доставки и покажет оплату. Заказ на $'+total()+'.','Press “Continue in chat”: the bot will ask for the delivery address and show payment. Your order is $'+total()+'.');
     haptic('ok')}

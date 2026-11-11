@@ -365,6 +365,10 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
 .hub b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,5.8vw,30px);line-height:1.05;color:var(--fg)}
 .hub>span{font-size:clamp(11.5px,3.1vw,14px);line-height:1.35;color:var(--gold2)}
 @media(prefers-reduced-motion:reduce){.wheel button,.wheel button img{transition:none}}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin-bottom:30px}
+.seg button{min-height:52px;background:var(--bg2);border:0;color:var(--fg2);font-family:var(--serif);font-size:21px;font-variant-numeric:lining-nums;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .25s,color .25s}
+.seg button.on{background:var(--gold);color:var(--ink)}
+#beecalc{max-width:640px}
 </style>
 
 <header class="nav">
@@ -534,6 +538,22 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
   </div>
 </section>
 
+<section class="sec tight" id="bees">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Труд пчёл</span><span class="en">The bees’ work</span></p>
+      <h2 class="h2"><span class="ru">Что стоит за одной банкой</span><span class="en">What stands behind one jar</span></h2>
+    </div>
+    <div class="seg" id="beeseg" role="tablist">
+      <button type="button" data-g="100"><span class="ru">100 г</span><span class="en">100 g</span></button>
+      <button type="button" data-g="250"><span class="ru">250 г</span><span class="en">250 g</span></button>
+      <button type="button" data-g="500" class="on"><span class="ru">500 г</span><span class="en">500 g</span></button>
+      <button type="button" data-g="5000"><span class="ru">5 кг</span><span class="en">5 kg</span></button>
+    </div>
+    <div id="beecalc"></div>
+  </div>
+</section>
+
 <section class="sec tight" id="formats">
   <img class="wide tall rv" src="img/jar-2.jpg" width="1200" height="1500" alt="" loading="lazy">
   <div class="wrap">
@@ -609,6 +629,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
   <a class="btn btn-gold" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a>
 </div>
 
+<script src="bees.js"></script>
 <script>
 (function(){
   var d=document.documentElement,T={ru:'Ak-Suu — высокогорный мёд, Тянь-Шань',en:'Ak-Suu — high-mountain honey, Tian Shan'};
@@ -630,6 +651,16 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     function run(){clearInterval(tm);if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;tm=setInterval(function(){sel((cur+1)%N)},2000)}
     H.forEach(function(h,i){var a=(i/N)*2*Math.PI-Math.PI/2,b=document.createElement('button');b.type='button';b.setAttribute('aria-label',h[1]);b.style.left=(50+41*Math.cos(a))+'%';b.style.top=(50+41*Math.sin(a))+'%';b.innerHTML='<img src="img/h'+(i+1)+'.jpg" alt="" loading="lazy" width="640" height="640">';b.addEventListener('click',function(){sel(i);run()});W.appendChild(b);bs.push(b)});
     sel(0);run();
+  })();
+  (function(){
+    var box=document.getElementById('beecalc'),seg=document.getElementById('beeseg');if(!box||!seg||!window.AkBees)return;
+    var g=500,shown=false;
+    function draw(){AkBees.render(box,g,d.lang==='ru'?'ru':'en')}
+    seg.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g=+b.dataset.g;
+      [].forEach.call(seg.children,function(x){x.classList.toggle('on',x===b)});draw()});
+    document.getElementById('lang').addEventListener('click',function(){if(shown)setTimeout(draw,0)});
+    if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){shown=true;draw();o.disconnect()}},{rootMargin:'0px 0px -10% 0px'});o.observe(box)}
+    else{shown=true;draw()}
   })();
   var s=document.getElementById('stick'),h=document.querySelector('.hero .cta'),o=document.getElementById('order');
   if(!('IntersectionObserver' in window))return;
