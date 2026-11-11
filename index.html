@@ -3,15 +3,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ak-Suu — высокогорный мёд, Тянь-Шань</title>
-<meta name="description" content="Ak-Suu. Высокогорный мёд с пасеки на 2 050–2 100 м, Ак-Суу, Тянь-Шань. High-mountain honey from Ak-Suu, Tian Shan. 370 hives, no more than 10 tonnes a year.">
-<meta name="theme-color" content="#0a0d0b">
+<meta name="description" content="Ak-Suu. Высокогорный мёд с пасеки на 2 050–2 100 м, Ак-Суу, Тянь-Шань. High-mountain honey from Ak-Suu, Tian Shan. 370 hives, no more than 7 tonnes a year. Jars from $10, order in Telegram.">
+<meta name="theme-color" content="#0b0e0c">
 <meta property="og:title" content="Ak-Suu — honey the bees made for themselves">
-<meta property="og:description" content="High-mountain honey from Ak-Suu, Tian Shan. 370 hives. No more than 10 tonnes a year.">
+<meta property="og:description" content="High-mountain honey from Ak-Suu, Tian Shan, 2,050 m. 370 hives, 7 tonnes a year at most. Jars from $10.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://ivanlimarev86-collab.github.io/aksuu-honey/img/jar.jpg">
+<meta property="og:site_name" content="Ak-Suu">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://ivanlimarev86-collab.github.io/aksuu-honey/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ak-Suu high-mountain honey jar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ivanlimarev86-collab.github.io/aksuu-honey/img/og.jpg">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:url" content="https://ivanlimarev86-collab.github.io/aksuu-honey/">
 <link rel="canonical" href="https://ivanlimarev86-collab.github.io/aksuu-honey/">
 <script>(function(){var l;try{l=localStorage.getItem('aksu-lang')}catch(e){}if(l!=='ru'&&l!=='en'){l=/^(ru|uk|be|kk|ky|uz|tg|hy|az)/i.test(navigator.language||'')?'ru':'en'}document.documentElement.lang=l;document.documentElement.classList.add('js')})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://ivanlimarev86-collab.github.io/aksuu-honey/#org","name":"Ak-Suu","url":"https://ivanlimarev86-collab.github.io/aksuu-honey/","logo":"https://ivanlimarev86-collab.github.io/aksuu-honey/img/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Ak-Suu","addressRegion":"Issyk-Kul Region","addressCountry":"KG"},"sameAs":["https://t.me/aksuu_honey_bot"]},{"@type":"Product","name":"Ak-Suu high-mountain honey, harvest 2026","description":"Raw high-mountain honey from an apiary at 2,050–2,100 m, Ak-Suu, Tian Shan. Glass jars 100 g, 250 g, 500 g.","image":["https://ivanlimarev86-collab.github.io/aksuu-honey/img/jar.jpg","https://ivanlimarev86-collab.github.io/aksuu-honey/img/og.jpg"],"brand":{"@type":"Brand","name":"Ak-Suu"},"category":"Honey","countryOfOrigin":"KG","offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"10","highPrice":"35","offerCount":"3","availability":"https://schema.org/InStock","url":"https://ivanlimarev86-collab.github.io/aksuu-honey/#formats","seller":{"@id":"https://ivanlimarev86-collab.github.io/aksuu-honey/#org"}}}]}</script>
+<script>
+/* Реклама и аналитика. Впишите номера счётчиков между кавычками — и они заработают. Пусто = выключено. */
+window.AK_TRACK={meta:'',ga:'',ym:''};
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0d0b'/%3E%3Cpath d='M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z' fill='none' stroke='%23c9a961' stroke-width='1.6'/%3E%3C/svg%3E">
 <link rel="preload" as="image" href="img/jar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +34,7 @@
 <style>
 /* Mobile first. Near-black ground, cream type, hairline gold; one idea per screen. */
 :root{
-  --bg:#0a0d0b; --bg2:#101512; --fg:#ece4d1; --fg2:#b9ad93; --fg3:#8a806a;
+  --bg:#0a0d0b; --bg2:linear-gradient(155deg,#151b17 0%,#0e120f 100%); --fg:#ece4d1; --fg2:#b9ad93; --fg3:#8a806a;
   --line:rgba(201,169,97,.22); --line2:rgba(201,169,97,.12); --gold:#c9a961; --gold2:#e3c57e; --ink:#0a0d0b;
   --serif:'Cormorant',Georgia,'Times New Roman',serif;
   --sans:'Manrope',system-ui,-apple-system,sans-serif;
@@ -29,7 +43,13 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{background:#080a09}
+body{margin:0;background:none;color:var(--fg);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(120% 62% at 50% -12%,rgba(214,178,104,.13),rgba(214,178,104,0) 62%),
+  radial-gradient(85% 55% at 105% 105%,rgba(34,66,50,.42),rgba(34,66,50,0) 66%),
+  radial-gradient(70% 45% at -8% 62%,rgba(126,86,36,.12),rgba(126,86,36,0) 62%),
+  linear-gradient(180deg,#0d110e 0%,#080a09 52%,#0b0d0a 100%)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 a{color:var(--gold);-webkit-tap-highlight-color:transparent}a:hover{color:var(--gold2)}
 h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;color:var(--fg)}
@@ -44,7 +64,7 @@ p{margin:0}
 .head{display:flex;flex-direction:column;gap:16px;max-width:38em;margin-bottom:clamp(28px,5vw,56px)}
 .head p:not(.eyebrow){color:var(--fg2);font-size:clamp(16px,1.6vw,18px);max-width:34em}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;text-decoration:none;font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;transition:background .2s,color .2s,border-color .2s;text-align:center}
-.btn-gold{background:var(--gold);color:var(--ink)}.btn-gold:hover{background:var(--gold2);color:var(--ink)}
+.btn-gold{background:linear-gradient(135deg,#e6c984 0%,#c9a961 52%,#b38f48 100%);color:var(--ink);box-shadow:0 10px 30px -14px rgba(201,169,97,.55)}.btn-gold:hover{background:var(--gold2);color:var(--ink)}
 .btn-line{border:1px solid var(--gold);color:var(--gold)}.btn-line:hover{border-color:var(--gold2);color:var(--gold2)}
 .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var(--gold2);outline-offset:4px}
 .cx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--fg3);text-transform:uppercase;line-height:1.6}
@@ -202,7 +222,7 @@ p{margin:0}
 .faq .ans{padding:0 0 24px;color:var(--fg2);max-width:44em}
 
 /* order */
-.order{background:var(--gold);color:var(--ink);padding-block:clamp(64px,10vw,130px);text-align:center}
+.order{background:linear-gradient(160deg,#dcbf79 0%,#c9a961 48%,#ae8a45 100%);color:var(--ink);padding-block:clamp(64px,10vw,130px);text-align:center}
 .order .wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
 .order h2{color:var(--ink);font-size:clamp(40px,5.6vw,70px);line-height:1;font-weight:300}
 .order p{color:#3a341f;max-width:28em;font-size:17px;font-weight:400}
@@ -241,8 +261,8 @@ html[lang="en"] .cmp-r .o::before{content:"Usually"}
 .hero{padding-top:0}
 .heroimg{position:relative;width:100%;max-width:720px;margin:0 auto clamp(18px,3vw,28px)}
 .heroimg img{display:block;width:100%;height:clamp(300px,84vw,620px);object-fit:cover;object-position:50% 80%}
-.heroimg::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,var(--bg) 0,rgba(10,13,11,0) 8%,rgba(10,13,11,0) 90%,var(--bg) 100%)}
-@media(min-width:760px){.heroimg{margin-top:28px}.heroimg::after{background:linear-gradient(180deg,rgba(10,13,11,0) 80%,var(--bg) 100%),linear-gradient(90deg,var(--bg) 0,rgba(10,13,11,0) 10%,rgba(10,13,11,0) 90%,var(--bg) 100%)}}
+.heroimg img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 88%,transparent 100%)}
+@media(min-width:760px){.heroimg{margin-top:28px}.heroimg img{-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 100%),linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(180deg,#000 80%,transparent 100%),linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}}
 .wide{display:block;width:100%;max-width:1120px;height:auto;aspect-ratio:3/2;object-fit:cover;margin:0 auto clamp(28px,5vw,56px)}
 .wide.pano{aspect-ratio:16/9}
 .wide.tall{aspect-ratio:1/1;max-width:560px;object-position:62% 40%}
@@ -397,8 +417,8 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     <h1><span class="ru">Мёд, который пчёлы сделали <em>для себя</em></span><span class="en">Honey the bees made <em>for themselves</em></span></h1>
     <p class="sub"><span class="ru">Пчёлы зимуют на своём мёде. Мы берём излишек.</span><span class="en">The bees winter on their own honey. We take the surplus.</span></p>
     <div class="cta">
-      <a class="btn btn-gold" href="#formats"><span class="ru">Выбрать банку</span><span class="en">Choose a jar</span></a>
-      <a class="btn btn-line" href="#method"><span class="ru">Почему он другой</span><span class="en">Why it differs</span></a>
+      <a class="btn btn-gold" href="#formats"><span class="ru">Выбрать банку · от $10</span><span class="en">Choose a jar · from $10</span></a>
+      <a class="btn btn-line" href="https://t.me/aksuu_honey_bot" data-ev="hero"><span class="ru">Заказать в Telegram</span><span class="en">Order in Telegram</span></a>
     </div>
   </div>
 </section>
@@ -562,9 +582,9 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
       <h2 class="h2"><span class="ru">Урожай 2026</span><span class="en">Harvest 2026</span></h2>
     </div>
     <div class="pl">
-      <div class="pr"><div class="sz"><b><span class="ru">100 г</span><span class="en">100 g</span></b><span><span class="ru">Проба</span><span class="en">Taster</span></span></div><div class="pc">$10</div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
-      <div class="pr"><div class="sz"><b><span class="ru">250 г</span><span class="en">250 g</span></b><span><span class="ru">На стол</span><span class="en">Table</span></span></div><div class="pc">$20</div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
-      <div class="pr"><div class="sz"><b><span class="ru">500 г</span><span class="en">500 g</span></b><span><span class="ru">Домой</span><span class="en">Home</span></span></div><div class="pc">$35</div><a class="btn btn-gold" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">100 г</span><span class="en">100 g</span></b><span><span class="ru">Проба</span><span class="en">Taster</span></span></div><div class="pc">$10</div><a class="btn btn-line" data-sku="j100" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">250 г</span><span class="en">250 g</span></b><span><span class="ru">На стол</span><span class="en">Table</span></span></div><div class="pc">$20</div><a class="btn btn-line" data-sku="j250" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">500 г</span><span class="en">500 g</span></b><span><span class="ru">Домой</span><span class="en">Home</span></span></div><div class="pc">$35</div><a class="btn btn-gold" data-sku="j500" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
     </div>
     <p class="note cx"><span class="ru">Стекло. Доставка не входит в стоимость.</span><span class="en">Glass. Delivery is not included in the price.</span></p>
   </div>
@@ -578,9 +598,9 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     </div>
     <p class="eyebrow sub2 first"><span class="ru">Для семьи</span><span class="en">For a family</span></p>
     <div class="pl">
-      <div class="pr"><div class="sz"><b><span class="ru">5 кг</span><span class="en">5 kg</span></b></div><div class="pc">$300</div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
-      <div class="pr"><div class="sz"><b><span class="ru">10 кг</span><span class="en">10 kg</span></b></div><div class="pc">$550</div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
-      <div class="pr"><div class="sz"><b><span class="ru">15 кг</span><span class="en">15 kg</span></b></div><div class="pc">$750</div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">5 кг</span><span class="en">5 kg</span></b></div><div class="pc">$300</div><a class="btn btn-line" data-sku="y5" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">10 кг</span><span class="en">10 kg</span></b></div><div class="pc">$550</div><a class="btn btn-line" data-sku="y10" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">15 кг</span><span class="en">15 kg</span></b></div><div class="pc">$750</div><a class="btn btn-line" data-sku="y15" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
     </div>
     <p class="eyebrow sub2"><span class="ru">Ресторану, отелю, клубу</span><span class="en">Restaurant, hotel, club</span></p>
     <div class="pl">
@@ -620,7 +640,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
   <div class="wrap">
     <div><b>Ak-Suu</b><br><span class="ru">Высокогорный мёд · Ультра органик</span><span class="en">High Mountains Honey · Ultra Organic</span></div>
     <div><span class="ru">Ак-Суу, Иссык-Кульская область, Кыргызстан</span><span class="en">Ak-Suu, Issyk-Kul Region, Kyrgyzstan</span></div>
-    <div><span class="ru">Мёд натуральный. Хранить при 5–20 °C.</span><span class="en">Natural honey. Store at 5–20 °C.</span><br>© 2026 Ak-Suu</div>
+    <div><span class="ru">Мёд натуральный. Хранить при 5–20 °C.</span><span class="en">Natural honey. Store at 5–20 °C.</span><br><a href="https://t.me/aksuu_honey_bot" data-ev="footer">Telegram</a> · <a href="privacy.html"><span class="ru">Конфиденциальность</span><span class="en">Privacy</span></a><br>© 2026 Ak-Suu</div>
   </div>
 </footer>
 
@@ -634,7 +654,27 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
 (function(){
   var d=document.documentElement,T={ru:'Ak-Suu — высокогорный мёд, Тянь-Шань',en:'Ak-Suu — high-mountain honey, Tian Shan'};
   document.title=T[d.lang]||T.ru;
-  function botLinks(){[].forEach.call(document.querySelectorAll('a[href^="https://t.me/aksuu_honey_bot"]'),function(a){a.href='https://t.me/aksuu_honey_bot?start='+(d.lang==='ru'?'ru':'en')})}
+  var SRC=(function(){var q={},v='';try{location.search.slice(1).split('&').forEach(function(p){var a=p.split('=');q[a[0]]=decodeURIComponent((a[1]||'').replace(/\+/g,' '))});
+    v=[q.utm_source,q.utm_medium,q.utm_campaign].filter(Boolean).join('_')||(q.fbclid?'meta':q.gclid?'google':q.yclid?'yandex':q.ttclid?'tiktok':'');
+    if(!v){var r=document.referrer||'';v=/instagram/.test(r)?'instagram':/facebook|fb\.com/.test(r)?'facebook':/youtu/.test(r)?'youtube':/google\./.test(r)?'google_search':/yandex\./.test(r)?'yandex_search':''}
+    v=v.toLowerCase().replace(/[^a-z0-9_]/g,'').slice(0,30);
+    if(v)localStorage.setItem('aksu-src',v);else v=localStorage.getItem('aksu-src')||''}catch(e){}return v})();
+  function botLinks(){var l=d.lang==='ru'?'ru':'en';[].forEach.call(document.querySelectorAll('a[href^="https://t.me/aksuu_honey_bot"]'),function(a){
+    var p=(a.dataset.sku?'o_'+a.dataset.sku+'x1_':'')+l;if(SRC&&p.length+2+SRC.length<=64)p+='--'+SRC;a.href='https://t.me/aksuu_honey_bot?start='+p})}
+  /* счётчики: включаются, если в AK_TRACK вписаны номера */
+  var K=window.AK_TRACK||{};
+  function js(u){var e=document.createElement('script');e.async=true;e.src=u;document.head.appendChild(e)}
+  if(K.meta){window.fbq=function(){fbq.callMethod?fbq.callMethod.apply(fbq,arguments):fbq.queue.push(arguments)};fbq.push=fbq;fbq.loaded=true;fbq.version='2.0';fbq.queue=[];js('https://connect.facebook.net/en_US/fbevents.js');fbq('init',K.meta);fbq('track','PageView')}
+  if(K.ga){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};js('https://www.googletagmanager.com/gtag/js?id='+K.ga);gtag('js',new Date());gtag('config',K.ga)}
+  if(K.ym){window.ym=function(){(ym.a=ym.a||[]).push(arguments)};ym.l=+new Date();js('https://mc.yandex.ru/metrika/tag.js');ym(+K.ym,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true})}
+  function ev(name,data){data=data||{};
+    if(window.fbq)fbq('track',{order:'Lead',jars:'ViewContent'}[name]||'CustomEvent',data);
+    if(window.gtag)gtag('event',{order:'generate_lead',jars:'view_item_list'}[name]||name,data);
+    if(window.ym&&K.ym)ym(+K.ym,'reachGoal',name,data)}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="https://t.me/aksuu_honey_bot"]');if(!a)return;
+    var sec=a.closest('section,header,footer,.stick');ev('order',{content_name:a.dataset.sku||'bot',place:a.dataset.ev||(sec&&(sec.id||sec.className.split(' ')[0]))||''})});
+  (function(){var f=document.getElementById('formats');if(!f||!('IntersectionObserver' in window))return;
+    var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){ev('jars');o.disconnect()}},{threshold:.3});o.observe(f)})();
   botLinks();
   document.getElementById('lang').addEventListener('click',function(){
     var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];botLinks();
