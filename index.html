@@ -634,8 +634,10 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
 (function(){
   var d=document.documentElement,T={ru:'Ak-Suu — высокогорный мёд, Тянь-Шань',en:'Ak-Suu — high-mountain honey, Tian Shan'};
   document.title=T[d.lang]||T.ru;
+  function botLinks(){[].forEach.call(document.querySelectorAll('a[href^="https://t.me/aksuu_honey_bot"]'),function(a){a.href='https://t.me/aksuu_honey_bot?start='+(d.lang==='ru'?'ru':'en')})}
+  botLinks();
   document.getElementById('lang').addEventListener('click',function(){
-    var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];
+    var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];botLinks();
     try{localStorage.setItem('aksu-lang',l)}catch(e){}
   });
   var rv=document.querySelectorAll('.rv');

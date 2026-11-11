@@ -203,7 +203,7 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
     if(pay)d.pay=pay;return d}
   function finish(){
     if(canSend&&order){tg.sendData(JSON.stringify(order));return}
-    var link='https://t.me/aksuu_honey_bot?start=o_'+Object.keys(cart).map(function(k){return k+'x'+cart[k]}).join('_');
+    var link='https://t.me/aksuu_honey_bot?start=o_'+Object.keys(cart).map(function(k){return k+'x'+cart[k]}).join('_')+'_'+lang;
     if(inTg&&tg.openTelegramLink){try{tg.openTelegramLink(link);setTimeout(function(){try{tg.close()}catch(e){}},400);return}catch(e){}}
     location.href=link}
   $('go').addEventListener('click',function(){
