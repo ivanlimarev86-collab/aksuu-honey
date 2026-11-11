@@ -9,6 +9,7 @@
     '.bz-hex{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;max-width:340px;margin:0 auto 10px}' +
     '.bz-hex i{width:17px;height:19px;background:var(--g);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);opacity:0;transform:scale(.4);transition:opacity .4s ease,transform .4s ease}' +
     '.bz-hex i.in{opacity:1;transform:none}' +
+    '.bz-hive{max-width:340px;margin:0 auto}.bz-hbar{height:10px;background:rgba(201,169,97,.14);margin:0 0 12px;overflow:hidden}.bz-hbar i{display:block;height:100%;background:linear-gradient(90deg,var(--g),var(--g2));transform-origin:left;transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}.bz-hbar.in i{transform:none}' +
     '.bz-cap{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--f3);text-align:center;line-height:1.6}' +
     '.bz-facts{border-top:1px solid var(--l);margin-top:22px}' +
     '.bz-fact{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;align-items:center;padding:18px 0;border-bottom:1px solid var(--l)}' +
@@ -25,6 +26,7 @@
     '.bz-leg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 14px;font-size:13.5px;line-height:1.35;color:var(--f2)}' +
     '.bz-leg b{font-weight:500;color:var(--f);font-variant-numeric:lining-nums}' +
     '.bz-leg i{display:inline-block;width:9px;height:9px;margin-right:7px}' +
+    '.bz-ratio{font-family:Cormorant,Georgia,serif;font-size:21px;line-height:1.3;color:var(--f);margin:16px 0 0;padding:12px 0;border-top:1px solid var(--l);border-bottom:1px solid var(--l);font-variant-numeric:lining-nums}.bz-ratio b{font-weight:400;color:var(--g2)}' +
     '.bz-p{font-size:14px;line-height:1.5;color:var(--f2);margin:14px 0 0}' +
     '.bz-src{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--f3);line-height:1.7;margin-top:18px}';
   var styled = false;
@@ -69,20 +71,21 @@
     style();
     var L = function (ru, en) { return lang === 'ru' ? ru : en; };
     var st = stats(g);
-    var unit = [10, 25, 50, 100, 250, 500, 1000, 2500, 5000].filter(function (u) { return st.bees / u <= 96; })[0] || 10000;
-    var n = Math.max(1, Math.round(st.bees / unit));
-    // one teaspoon, 7 g: USDA values per 100 g scaled by 0.07
+    // University of Georgia: a colony holds 40,000-65,000 bees; 50,000 is used as the middle
+    var share = st.bees / 50000 * 100;
+    var shareText = share >= 100 ? dec(share / 100, lang) + L(' таких семей, то есть больше', ' such colonies, more than') : (share < 10 ? dec(share, lang) : fmt(share, lang)) + ' %';
+    // one teaspoon, 7 g: USDA sugars per 100 g scaled by 0.07; water from our own lab report (16.2 %)
     var seg = [
       [L('Фруктоза', 'Fructose'), 2.9, '#e3c57e'],
       [L('Глюкоза', 'Glucose'), 2.5, '#c9a961'],
-      [L('Вода', 'Water'), 1.2, '#8a7a4c'],
-      [L('Другие сахара и вещества', 'Other sugars and compounds'), 0.4, '#5a5238']
+      [L('Вода', 'Water'), 1.1, '#8a7a4c'],
+      [L('Другие сахара и вещества', 'Other sugars and compounds'), 0.5, '#5a5238']
     ];
     el.className = 'bz';
     el.innerHTML =
       '<div class="bz-top"><b data-k="bees"></b><span>' + L(ruPl(st.bees, 'пчела прожила', 'пчелы прожили', 'пчёл прожили') + ' всю жизнь, собирая этот мёд', 'bees spent their whole lives gathering this honey') + '</span></div>' +
-      '<div class="bz-hex">' + new Array(n + 1).join('<i></i>') + '</div>' +
-      '<p class="bz-cap">' + L('Каждая сота на рисунке — ' + fmt(unit, lang) + ' ' + ruPl(unit, 'пчела', 'пчелы', 'пчёл'), 'Each cell in the picture is ' + fmt(unit, lang) + ' bees') + '</p>' +
+      '<div class="bz-hive"><div class="bz-hbar"><i style="width:' + Math.max(1.5, Math.min(100, share)) + '%"></i></div>' +
+      '<p class="bz-cap">' + L('Это ' + shareText + ' одной пчелиной семьи. В семье около 50\u00a0000 пчёл', 'That is ' + shareText + ' of one colony. A colony is about 50,000 bees') + '</p></div>' +
       '<div class="bz-facts">' +
         '<div class="bz-fact">' + ICON.flower + '<div><b data-k="flowers"></b><span>' + L('раз пчёлы сели на цветок', 'times the bees landed on a flower') + '</span></div></div>' +
         '<div class="bz-fact">' + orbit(st.laps) + '<div><b data-k="km"></b><span>' + L('налетали эти пчёлы: ', 'flown by these bees: ') + dec(st.laps, lang) + L(' оборота вокруг Земли', ' times around the Earth') + '</span></div></div>' +
@@ -93,13 +96,12 @@
       '<div class="bz-spoon"><h3>' + L('В одной чайной ложке · 7 г · ≈ 21 ккал', 'In one teaspoon · 7 g · ≈ 21 kcal') + '</h3>' +
         '<div class="bz-bar">' + seg.map(function (s) { return '<i style="flex:' + s[1] + ';background:' + s[2] + '"></i>'; }).join('') + '</div>' +
         '<div class="bz-leg">' + seg.map(function (s) { return '<div><i style="background:' + s[2] + '"></i>' + s[0] + ' <b>' + dec(s[1], lang) + L(' г', ' g') + '</b></div>'; }).join('') + '</div>' +
-        '<p class="bz-p">' + L('В каждой ложке ≈\u00a031\u00a0000 посадок на цветок и труд двенадцати пчёл за всю жизнь. Фруктозы в мёде больше, чем глюкозы; обе — простые сахара, организму не нужно их расщеплять.',
-                                'Each spoonful holds ≈ 31,000 landings on flowers and the life’s work of twelve bees. Honey has more fructose than glucose; both are simple sugars the body does not need to break down.') + '</p></div>' +
-      '<p class="bz-src">' + L('Оценки труда пчёл: Университет Джорджии, Университет Флориды. Состав и аминокислоты: типичный мёд по USDA и опубликованным исследованиям.',
-                                'Bee-work estimates: University of Georgia, University of Florida. Composition and amino acids: typical honey per USDA and published studies.') + '</p>';
-    var hx = el.querySelector('.bz-hex').children;
-    [].forEach.call(hx, function (c, i) { setTimeout(function () { c.classList.add('in'); }, 60 + i * Math.min(22, 1400 / n)); });
-    setTimeout(function () { el.querySelector('.bz-bar').classList.add('in'); }, 250);
+        '<p class="bz-ratio">' + L('Фруктоза к глюкозе <b>≈ 1,15 : 1</b> · влажность <b>16,2 %</b>', 'Fructose to glucose <b>≈ 1.15 : 1</b> · moisture <b>16.2%</b>') + '</p>' +
+        '<p class="bz-p">' + L('В каждой ложке ≈\u00a031\u00a0000 посадок на цветок и труд двенадцати пчёл за всю жизнь. Фруктозы больше, чем глюкозы; обе — простые сахара, организму не нужно их расщеплять. Влажность 16,2 % — по нашему протоколу, при допуске до 20 %.',
+                                'Each spoonful holds ≈ 31,000 landings on flowers and the life’s work of twelve bees. There is more fructose than glucose; both are simple sugars the body does not need to break down. Moisture is 16.2% by our lab report, against a limit of 20%.') + '</p></div>' +
+      '<p class="bz-src">' + L('Оценки труда пчёл: Университет Джорджии, Университет Флориды. Сахара и аминокислоты: типичный мёд по USDA и опубликованным исследованиям. Влажность: наш протокол KG/080.26.00022.',
+                                'Bee-work estimates: University of Georgia, University of Florida. Sugars and amino acids: typical honey per USDA and published studies. Moisture: our lab report KG/080.26.00022.') + '</p>';
+    setTimeout(function () { el.querySelector('.bz-bar').classList.add('in'); el.querySelector('.bz-hbar').classList.add('in'); }, 250);
     countUp(el.querySelector('[data-k=bees]'), st.bees, function (v) { return '≈ ' + fmt(Math.round(v / 10) * 10, lang); });
     countUp(el.querySelector('[data-k=flowers]'), st.flowers, function (v) { return '≈ ' + flowersText(v, lang); });
     countUp(el.querySelector('[data-k=km]'), st.km, function (v) { return '≈ ' + fmt(Math.round(v / 100) * 100, lang) + L(' км', ' km'); });
