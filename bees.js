@@ -5,6 +5,7 @@
 (function () {
   var CSS = '' +
     '.bz{--g:#c9a961;--g2:#e3c57e;--f:#ece4d1;--f2:#b9ad93;--f3:#8a806a;--l:rgba(201,169,97,.22);text-align:left}' +
+    '.bz-top{text-align:center}.bz-top b{display:block;font-family:Cormorant,Georgia,serif;font-weight:300;font-size:clamp(54px,16vw,76px);line-height:1;color:var(--g2);font-variant-numeric:lining-nums}.bz-top span{display:block;font-family:Cormorant,Georgia,serif;font-style:italic;font-size:21px;line-height:1.3;color:var(--f2);margin:8px auto 20px;max-width:15em}' +
     '.bz-hex{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;max-width:340px;margin:0 auto 10px}' +
     '.bz-hex i{width:17px;height:19px;background:var(--g);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);opacity:0;transform:scale(.4);transition:opacity .4s ease,transform .4s ease}' +
     '.bz-hex i.in{opacity:1;transform:none}' +
@@ -39,7 +40,15 @@
   function ruPl(n, a, b, c) { n = Math.abs(n); return n % 10 === 1 && n % 100 !== 11 ? a : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? b : c); }
   function flowersText(f, lang) { return f >= 1e6 ? dec(f / 1e6, lang) + (lang === 'ru' ? ' млн' : ' million') : fmt(Math.round(f / 1000) * 1000, lang); }
 
+  // free amino acids in honey: 0.24-0.81 g per kg (published ranges), mostly proline
+  function aminoText(g, lang) {
+    var lo = g * 0.24, hi = g * 0.81; // mg
+    if (hi < 1000) return fmt(Math.round(lo / 10) * 10, lang) + '–' + fmt(Math.round(hi / 10) * 10, lang) + (lang === 'ru' ? ' мг' : ' mg');
+    return dec(lo / 1000, lang) + '–' + dec(hi / 1000, lang) + (lang === 'ru' ? ' г' : ' g');
+  }
   var ICON = {
+    one: '<svg viewBox="0 0 52 52"><ellipse cx="26" cy="29" rx="6" ry="9"/><path d="M21 26h10M21 31h10M26 20v-4"/><path d="M20 24c-7-4-10-1-9 3s6 3 9 1M32 24c7-4 10-1 9 3s-6 3-9 1"/><path class="orb" d="M6 44c10-8 30-8 40 0"/></svg>',
+    amino: '<svg viewBox="0 0 52 52"><path d="M26 8l9 5v10l-9 5-9-5V13z"/><path d="M17 23l-8 5v9l8 5 9-5v-9M35 23l8 5v9l-8 5-9-5"/></svg>',
     bee: '<svg viewBox="0 0 52 52"><ellipse cx="26" cy="30" rx="8" ry="12"/><path d="M19 26h14M18.500 31h15M20 36h12M26 18v-5M23 13l-4-5M29 13l4-5"/><path d="M18 24C9 18 5 22 6 27s8 5 12 2M34 24c9-6 13-2 12 3s-8 5-12 2"/></svg>',
     flower: '<svg viewBox="0 0 52 52"><circle class="fill" cx="26" cy="26" r="4.500"/><path d="M26 20c-5-10 5-10 0-16M26 32c5 10-5 10 0 16M20 26c-10 5-10-5-16 0M32 26c10-5 10 5 16 0M21.500 21.500c-10-4-4-10-11-11M30.500 30.500c10 4 4 10 11 11M21.500 30.500c-4 10-10 4-11 11M30.500 21.500c4-10 10-4 11-11"/></svg>',
     spoon: '<svg viewBox="0 0 52 52"><ellipse cx="17" cy="17" rx="9" ry="11" transform="rotate(-45 17 17)"/><path d="M24 24l20 20"/><path class="fill" d="M12 16c3-3 7-3 10 0-1 4-4 6-7 6s-3-3-3-6z" opacity=".5"/></svg>'
@@ -71,21 +80,23 @@
     ];
     el.className = 'bz';
     el.innerHTML =
+      '<div class="bz-top"><b data-k="bees"></b><span>' + L(ruPl(st.bees, 'пчела прожила', 'пчелы прожили', 'пчёл прожили') + ' всю жизнь, собирая этот мёд', 'bees spent their whole lives gathering this honey') + '</span></div>' +
       '<div class="bz-hex">' + new Array(n + 1).join('<i></i>') + '</div>' +
-      '<p class="bz-cap">' + L('Одна сота: ', 'One cell: ') + fmt(unit, lang) + L(' пчёл', ' bees') + '</p>' +
+      '<p class="bz-cap">' + L('Каждая сота на рисунке — ' + fmt(unit, lang) + ' ' + ruPl(unit, 'пчела', 'пчелы', 'пчёл'), 'Each cell in the picture is ' + fmt(unit, lang) + ' bees') + '</p>' +
       '<div class="bz-facts">' +
-        '<div class="bz-fact">' + ICON.bee + '<div><b data-k="bees"></b><span>' + L('пчёл прожили всю жизнь, собирая этот мёд', 'bees spent their whole lives gathering this honey') + '</span></div></div>' +
-        '<div class="bz-fact">' + ICON.flower + '<div><b data-k="flowers"></b><span>' + L('цветков они облетели', 'flowers they visited') + '</span></div></div>' +
-        '<div class="bz-fact">' + orbit(st.laps) + '<div><b data-k="km"></b><span>' + L('полёта: ', 'of flight: ') + dec(st.laps, lang) + L(' оборота вокруг Земли', ' times around the Earth') + '</span></div></div>' +
+        '<div class="bz-fact">' + ICON.flower + '<div><b data-k="flowers"></b><span>' + L('раз пчёлы сели на цветок', 'times the bees landed on a flower') + '</span></div></div>' +
+        '<div class="bz-fact">' + orbit(st.laps) + '<div><b data-k="km"></b><span>' + L('налетали эти пчёлы: ', 'flown by these bees: ') + dec(st.laps, lang) + L(' оборота вокруг Земли', ' times around the Earth') + '</span></div></div>' +
+        '<div class="bz-fact">' + ICON.one + '<div><b>' + L('≈ 110 км', '≈ 110 km') + '</b><span>' + L('пролетела каждая пчела и села на ≈\u00a02\u00a0600 цветков', 'flown by each bee, landing on ≈\u00a02,600 flowers') + '</span></div></div>' +
         '<div class="bz-fact">' + ICON.spoon + '<div><b data-k="spoons"></b><span>' + L(ruPl(st.spoons, 'чайная ложка', 'чайные ложки', 'чайных ложек') + ': по одной в день хватит на ', 'teaspoons: one a day lasts ') + fmt(st.spoons, lang) + L(' ' + ruPl(st.spoons, 'день', 'дня', 'дней'), ' days') + '</span></div></div>' +
+        '<div class="bz-fact">' + ICON.amino + '<div><b>≈ ' + aminoText(g, lang) + '</b><span>' + L('аминокислот в этом объёме, больше всего пролина', 'of amino acids in this amount, mostly proline') + '</span></div></div>' +
       '</div>' +
       '<div class="bz-spoon"><h3>' + L('В одной чайной ложке · 7 г · ≈ 21 ккал', 'In one teaspoon · 7 g · ≈ 21 kcal') + '</h3>' +
         '<div class="bz-bar">' + seg.map(function (s) { return '<i style="flex:' + s[1] + ';background:' + s[2] + '"></i>'; }).join('') + '</div>' +
         '<div class="bz-leg">' + seg.map(function (s) { return '<div><i style="background:' + s[2] + '"></i>' + s[0] + ' <b>' + dec(s[1], lang) + L(' г', ' g') + '</b></div>'; }).join('') + '</div>' +
-        '<p class="bz-p">' + L('Фруктоза и глюкоза — простые сахара: организму не нужно их расщеплять. Аминокислот в мёде 0,2–0,8 г на килограмм, больше всего пролина. Каждая ложка — труд двенадцати пчёл за всю жизнь.',
-                                'Fructose and glucose are simple sugars: the body does not need to break them down. Honey holds 0.2–0.8 g of amino acids per kilogram, mostly proline. Each spoonful is the life’s work of twelve bees.') + '</p></div>' +
-      '<p class="bz-src">' + L('Оценки труда пчёл: Университет Джорджии, Университет Флориды. Состав: типичный мёд по USDA FoodData Central.',
-                                'Bee-work estimates: University of Georgia, University of Florida. Composition: typical honey, USDA FoodData Central.') + '</p>';
+        '<p class="bz-p">' + L('В каждой ложке ≈\u00a031\u00a0000 посадок на цветок и труд двенадцати пчёл за всю жизнь. Фруктозы в мёде больше, чем глюкозы; обе — простые сахара, организму не нужно их расщеплять.',
+                                'Each spoonful holds ≈ 31,000 landings on flowers and the life’s work of twelve bees. Honey has more fructose than glucose; both are simple sugars the body does not need to break down.') + '</p></div>' +
+      '<p class="bz-src">' + L('Оценки труда пчёл: Университет Джорджии, Университет Флориды. Состав и аминокислоты: типичный мёд по USDA и опубликованным исследованиям.',
+                                'Bee-work estimates: University of Georgia, University of Florida. Composition and amino acids: typical honey per USDA and published studies.') + '</p>';
     var hx = el.querySelector('.bz-hex').children;
     [].forEach.call(hx, function (c, i) { setTimeout(function () { c.classList.add('in'); }, 60 + i * Math.min(22, 1400 / n)); });
     setTimeout(function () { el.querySelector('.bz-bar').classList.add('in'); }, 250);
