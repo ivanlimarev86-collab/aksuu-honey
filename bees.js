@@ -11,13 +11,13 @@
     '.bz-hex i.in{opacity:1;transform:none}' +
     '.bz-hive{max-width:340px;margin:0 auto}.bz-hbar{height:10px;background:rgba(201,169,97,.14);margin:0 0 12px;overflow:hidden}.bz-hbar i{display:block;height:100%;background:linear-gradient(90deg,var(--g),var(--g2));transform-origin:left;transform:scaleX(0);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}.bz-hbar.in i{transform:none}' +
     '.bz-cap{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--f3);text-align:center;line-height:1.6}' +
-    '.bz-facts{border-top:1px solid var(--l);margin-top:16px}' +
-    '.bz-fact{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--l)}' +
-    '.bz-fact svg{width:40px;height:40px;stroke:var(--g);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}' +
+    '.bz-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--l);border:1px solid var(--l);margin-top:16px}' +
+    '.bz-fact{background:linear-gradient(155deg,#141a16,#0c100d);padding:14px 12px 13px;min-width:0}.bz-fact:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:center}' +
+    '.bz-fact svg{display:block;width:30px;height:30px;margin-bottom:9px;stroke:var(--g);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}' +
     '.bz-fact svg .fill{fill:var(--g);stroke:none}' +
     '.bz-fact svg .orb{stroke-dasharray:3 4;opacity:.75}' +
-    '.bz-fact b{display:block;font-family:Cormorant,Georgia,serif;font-weight:300;font-size:clamp(27px,7.6vw,33px);line-height:1;color:var(--g2);font-variant-numeric:lining-nums;white-space:nowrap}' +
-    '.bz-fact span{display:block;font-size:13.5px;line-height:1.35;color:var(--f2);margin-top:3px}' +
+    '.bz-fact b{display:block;font-family:Cormorant,Georgia,serif;font-weight:300;font-size:clamp(22px,6.4vw,28px);line-height:1;color:var(--g2);font-variant-numeric:lining-nums;white-space:nowrap}.bz-fact:last-child:nth-child(odd) svg{margin:0}' +
+    '.bz-fact span{display:block;font-size:12.5px;line-height:1.35;color:var(--f2);margin-top:4px}' +
     '.bz-spoon{margin-top:26px}' +
     '.bz-spoon h3{font-family:Cormorant,Georgia,serif;font-weight:400;font-size:25px;line-height:1.15;color:var(--f);margin:0;font-variant-numeric:lining-nums}' +
     '.bz-bar{display:flex;height:16px;margin:16px 0 12px;gap:2px}' +
