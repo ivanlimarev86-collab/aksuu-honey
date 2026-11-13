@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ak-Suu — высокогорный мёд, Тянь-Шань</title>
+<meta name="description" content="Ak-Suu. Высокогорный мёд с пасеки на 2 100 м, Ак-Суу, Тянь-Шань. High-mountain honey from Ak-Suu, Tian Shan. 370 hives, no more than 7 tonnes a year. Jars from $10, order in Telegram.">
+<meta name="theme-color" content="#0b0e0c">
+<meta property="og:title" content="Ak-Suu — honey the bees made for themselves">
+<meta property="og:description" content="High-mountain honey from Ak-Suu, Tian Shan, 2,100 m. 370 hives, 7 tonnes a year at most. Jars from $10.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ak-Suu">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://aksuuhoney.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ak-Suu high-mountain honey jar">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aksuuhoney.com/img/og.jpg">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:url" content="https://aksuuhoney.com/">
+<link rel="canonical" href="https://aksuuhoney.com/">
+<script>(function(){var l;try{l=localStorage.getItem('aksu-lang')}catch(e){}if(l!=='ru'&&l!=='en'){l=/^(ru|uk|be|kk|ky|uz|tg|hy|az)/i.test(navigator.language||'')?'ru':'en'}document.documentElement.lang=l;document.documentElement.classList.add('js')})();</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://aksuuhoney.com/#org","name":"Ak-Suu","url":"https://aksuuhoney.com/","logo":"https://aksuuhoney.com/img/og.jpg","address":{"@type":"PostalAddress","addressLocality":"Ak-Suu","addressRegion":"Issyk-Kul Region","addressCountry":"KG"},"sameAs":["https://t.me/aksuu_honey_bot"]},{"@type":"Product","name":"Ak-Suu high-mountain honey, harvest 2026","description":"Raw high-mountain honey from an apiary at 2,100 m, Ak-Suu, Tian Shan. Glass jars 100 g, 250 g, 500 g.","image":["https://aksuuhoney.com/img/jar.jpg","https://aksuuhoney.com/img/og.jpg"],"brand":{"@type":"Brand","name":"Ak-Suu"},"category":"Honey","countryOfOrigin":"KG","offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"10","highPrice":"35","offerCount":"3","availability":"https://schema.org/InStock","url":"https://aksuuhoney.com/#formats","seller":{"@id":"https://aksuuhoney.com/#org"}}}]}</script>
+<script>
+/* Реклама и аналитика. Впишите номера счётчиков между кавычками — и они заработают. Пусто = выключено. */
+window.AK_TRACK={meta:'',ga:'',ym:''};
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0d0b'/%3E%3Cpath d='M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z' fill='none' stroke='%23c9a961' stroke-width='1.6'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/jar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* Mobile first. Near-black ground, cream type, hairline gold; one idea per screen. */
+:root{
+  --bg:#0a0d0b; --bg2:linear-gradient(155deg,#151b17 0%,#0e120f 100%); --fg:#ece4d1; --fg2:#b9ad93; --fg3:#8a806a;
+  --line:rgba(201,169,97,.22); --line2:rgba(201,169,97,.12); --gold:#c9a961; --gold2:#e3c57e; --ink:#0a0d0b;
+  --serif:'Cormorant',Georgia,'Times New Roman',serif;
+  --sans:'Manrope',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{background:#080a09}
+body{margin:0;background:none;color:var(--fg);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(120% 62% at 50% -12%,rgba(214,178,104,.13),rgba(214,178,104,0) 62%),
+  radial-gradient(85% 55% at 105% 105%,rgba(34,66,50,.42),rgba(34,66,50,0) 66%),
+  radial-gradient(70% 45% at -8% 62%,rgba(126,86,36,.12),rgba(126,86,36,0) 62%),
+  linear-gradient(180deg,#0d110e 0%,#080a09 52%,#0b0d0a 100%)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--gold);-webkit-tap-highlight-color:transparent}a:hover{color:var(--gold2)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;text-wrap:balance;color:var(--fg)}
+p{margin:0}
+[id]{scroll-margin-top:84px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+@media(min-width:900px){.wrap{padding-left:max(48px,env(safe-area-inset-left,0px));padding-right:max(48px,env(safe-area-inset-right,0px))}}
+.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.sec{padding-block:clamp(64px,11vw,150px)}
+.sec.tight{padding-top:0}
+.h2{font-size:clamp(32px,5vw,60px);line-height:1.06;letter-spacing:-.005em}
+.head{display:flex;flex-direction:column;gap:16px;max-width:38em;margin-bottom:clamp(28px,5vw,56px)}
+.head p:not(.eyebrow){color:var(--fg2);font-size:clamp(16px,1.6vw,18px);max-width:34em}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;text-decoration:none;font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;transition:background .2s,color .2s,border-color .2s;text-align:center}
+.btn-gold{background:linear-gradient(135deg,#e6c984 0%,#c9a961 52%,#b38f48 100%);color:var(--ink);box-shadow:0 10px 30px -14px rgba(201,169,97,.55)}.btn-gold:hover{background:var(--gold2);color:var(--ink)}
+.btn-line{border:1px solid var(--gold);color:var(--gold)}.btn-line:hover{border-color:var(--gold2);color:var(--gold2)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var(--gold2);outline-offset:4px}
+.cx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--fg3);text-transform:uppercase;line-height:1.6}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(10,13,11,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{text-decoration:none;color:var(--fg);display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand b{font-family:var(--serif);font-weight:500;font-size:22px;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}
+.brand span{font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--fg3);margin-top:5px;white-space:nowrap}
+.links{display:none;gap:30px;font-size:10px;letter-spacing:.26em;text-transform:uppercase}
+.links a{color:var(--fg2);text-decoration:none}.links a:hover{color:var(--gold)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:10px;letter-spacing:.2em}
+@media(min-width:980px){.links{display:flex}.nav .wrap{min-height:72px}}
+@media(max-width:430px){.brand span{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(40px,9vw,130px) clamp(48px,8vw,110px);text-align:center}
+.hero .wrap{display:flex;flex-direction:column;align-items:center;gap:22px}
+.jar{width:clamp(64px,9vw,92px);height:auto;color:var(--gold)}
+.hero h1{font-size:clamp(42px,8vw,108px);line-height:1;letter-spacing:-.012em;font-weight:300;max-width:11em}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-family:var(--serif);font-size:clamp(20px,2.3vw,27px);color:var(--fg2);font-style:italic;font-weight:300;max-width:24em;line-height:1.4}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:6px;width:100%}
+.hero .cta .btn{flex:1 1 240px;max-width:320px}
+.hero .meta{margin-top:14px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--fg3);display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;text-transform:uppercase}
+
+/* key figures */
+.figure{border-top:1px solid var(--line);padding-block:clamp(52px,8vw,100px)}
+.figure.last{border-bottom:1px solid var(--line)}
+.figure .wrap{display:grid;gap:26px;align-items:center}
+@media(min-width:900px){.figure .wrap{grid-template-columns:minmax(0,460px) 1fr;gap:72px}}
+.figure .n{font-family:var(--serif);font-weight:300;font-size:clamp(104px,17vw,210px);line-height:.85;color:var(--gold);letter-spacing:-.03em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.figure .n small{font-size:.36em;letter-spacing:0}
+.figure .t{display:flex;flex-direction:column;gap:14px;min-width:0}
+.figure .t h2{font-size:clamp(27px,3vw,38px);line-height:1.15}
+.figure .t p{color:var(--fg2);max-width:32em}
+
+/* three facts */
+.truths{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));border-top:1px solid var(--line)}
+@media(min-width:800px){.truths{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tr{padding:32px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:baseline;min-width:0}
+.tr b{font-family:var(--serif);font-weight:300;font-size:clamp(46px,5vw,64px);line-height:1;color:var(--fg);grid-row:span 2;min-width:2.2em;white-space:nowrap}
+.tr h3{font-size:22px}
+.tr p{color:var(--fg2);font-size:15px;margin-top:6px}
+@media(min-width:800px){.tr{display:flex;flex-direction:column;gap:12px;padding:48px 36px 48px 0;border-right:1px solid var(--line)}.tr:last-child{border-right:0}.tr:not(:first-child){padding-left:36px}.tr p{margin:0}}
+
+/* cards */
+.grid3{display:grid;gap:2px;grid-template-columns:repeat(1,minmax(0,1fr))}
+@media(min-width:800px){.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rl{background:var(--bg2);padding:32px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+@media(min-width:800px){.rl{padding:40px 32px}}
+.rl i{font-family:var(--serif);font-style:italic;font-size:42px;line-height:1;color:var(--gold)}
+.rl h3{font-size:26px;line-height:1.15}
+.rl p{color:var(--fg2);font-size:15px}
+.rl p:not(.cx):last-of-type,.rl p:not(.cx):only-of-type{flex:1}
+.rl .cx{color:var(--fg);font-size:12px;line-height:2}
+.rl a{font-size:10px;letter-spacing:.26em;text-transform:uppercase;text-decoration:none;padding:12px 0 4px;margin-top:4px}
+
+/* season */
+.season{display:grid;gap:36px;align-items:start}
+@media(min-width:900px){.season{grid-template-columns:1fr 1.1fr;gap:80px}}
+.season>*{min-width:0}
+.hd{display:flex;flex-direction:column;gap:16px}
+.hd p:not(.eyebrow){color:var(--fg2);max-width:30em}
+.tl{display:flex;flex-direction:column;margin:0}
+.tl div{display:grid;grid-template-columns:1fr;gap:6px;padding:18px 0;border-bottom:1px solid var(--line)}
+.tl div:first-child{border-top:1px solid var(--line)}
+@media(min-width:520px){.tl div{grid-template-columns:130px 1fr;gap:20px}}
+.tl dt{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);padding-top:5px}
+.tl dd{margin:0;color:var(--fg);font-family:var(--serif);font-size:21px;line-height:1.35}
+.tl dd small{display:block;font-family:var(--sans);font-size:14.5px;color:var(--fg2);line-height:1.6;margin-top:6px}
+
+/* compare */
+.cmp{border-top:1px solid var(--line);margin:0}
+.cmp-h,.cmp-r{display:grid;grid-template-columns:180px minmax(0,1fr) minmax(0,1fr);gap:28px;padding:20px 0;border-bottom:1px solid var(--line2)}
+.cmp-h{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fg3);padding:18px 0}
+.cmp-h>span:last-child{color:var(--gold)}
+.cmp-r dt{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);padding-top:5px}
+.cmp-r .o{color:var(--fg3);font-size:15px}
+.cmp-r .a{color:var(--fg);font-family:var(--serif);font-size:21px;line-height:1.35}
+.cmp-r dd{margin:0;min-width:0}
+.cmp-r dd::before{display:none;font-family:var(--sans);font-size:9px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:2px}
+@media(max-width:720px){
+  .cmp-h{display:none}
+  .cmp-r{grid-template-columns:1fr;gap:10px;padding:22px 0}
+  .cmp-r dd::before{display:block}
+  .cmp-r .o::before{content:"Обычно";color:var(--fg3)}
+  .cmp-r .a::before{content:"Ak-Suu";color:var(--gold)}
+}
+
+/* passport */
+.pass{display:grid;gap:32px;align-items:start}
+@media(min-width:900px){.pass{grid-template-columns:1fr 1.15fr;gap:80px}}
+.pass>*{min-width:0}
+.pp{font-family:var(--mono);font-size:12.5px;color:var(--fg2);border:1px solid var(--line);padding:4px 16px}
+@media(min-width:520px){.pp{padding:6px 26px}}
+.pp .r{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;padding:13px 0;border-bottom:1px solid var(--line2);align-items:baseline}
+.pp .r:last-child{border-bottom:0}
+.pp .r>span:nth-child(1){color:var(--fg3);letter-spacing:.06em;text-transform:uppercase;font-size:10.5px}
+.pp .r>span:nth-child(2){color:var(--fg);text-align:right;font-variant-numeric:tabular-nums}
+.pp .r>span:nth-child(3){color:var(--fg3);font-size:11px;text-align:right;grid-column:2}
+.pp .r .w{color:var(--fg3)!important}
+@media(min-width:520px){.pp .r{grid-template-columns:minmax(0,1fr) auto 84px}.pp .r>span:nth-child(3){grid-column:auto}}
+.pp .r.hd2>span{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg3)}
+
+/* craft */
+.craft{display:grid;gap:2px;grid-template-columns:repeat(1,minmax(0,1fr))}
+@media(min-width:640px){.craft{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.craft{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cr{background:var(--bg2);padding:26px 24px;display:grid;grid-template-columns:26px 1fr;gap:6px 18px;min-width:0}
+.cr h3{font-size:24px;line-height:1.15}
+.cr p{color:var(--fg2);font-size:14.5px;grid-column:2}
+.cr svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+@media(min-width:640px){.cr{padding:36px 30px;display:flex;flex-direction:column;gap:12px}}
+
+/* terroir */
+.ter{display:grid;gap:2px;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(min-width:900px){.ter{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.te{background:var(--bg2);padding:24px 20px;min-width:0}
+.te>span{display:block;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--fg3)}
+.te b{display:block;margin-top:10px;font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.6vw,30px);line-height:1.15;color:var(--fg)}
+
+/* live */
+.live{border:1px solid var(--line);padding:32px 24px;display:grid;gap:20px;align-items:center}
+@media(min-width:800px){.live{grid-template-columns:1fr auto;padding:48px;gap:48px}}
+.live .tag{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.live .tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.live h2{font-size:clamp(28px,3.6vw,42px);line-height:1.1;margin-top:14px}
+.live p{color:var(--fg2);max-width:34em;margin-top:12px}
+
+/* formats */
+.fm{display:grid;gap:2px;grid-template-columns:repeat(1,minmax(0,1fr))}
+@media(min-width:640px){.fm{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1000px){.fm{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.f{background:var(--bg2);padding:30px 24px 24px;display:flex;flex-direction:column;min-width:0;position:relative}
+@media(min-width:640px){.f{padding:40px 30px 32px}}
+.f.hl{box-shadow:inset 0 0 0 1px var(--gold)}
+.f .k{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fg3)}
+.f .v{font-family:var(--serif);font-weight:300;font-size:56px;line-height:1;margin-top:18px;color:var(--fg)}
+.f .d{margin-top:14px;color:var(--fg2);font-size:14.5px;flex:1}
+.f .p{margin-top:24px;font-family:var(--mono);font-size:13px;color:var(--fg);letter-spacing:.06em;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
+.f .p>span:last-child{color:var(--fg3);font-size:12px}
+.f .btn{margin-top:20px;width:100%;min-height:50px}
+.f .rib{position:absolute;top:0;right:0;background:var(--gold);color:var(--ink);font-size:9px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;padding:6px 12px}
+.note{margin-top:20px}
+
+/* faq */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;min-height:64px;font-family:var(--serif);font-size:clamp(21px,2.2vw,24px);line-height:1.25;color:var(--fg)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);font-weight:300;color:var(--gold);font-size:24px;flex:none;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 0 24px;color:var(--fg2);max-width:44em}
+
+/* order */
+.order{background:linear-gradient(160deg,#dcbf79 0%,#c9a961 48%,#ae8a45 100%);color:var(--ink);padding-block:clamp(64px,10vw,130px);text-align:center}
+.order .wrap{display:flex;flex-direction:column;align-items:center;gap:20px}
+.order h2{color:var(--ink);font-size:clamp(40px,5.6vw,70px);line-height:1;font-weight:300}
+.order p{color:#3a341f;max-width:28em;font-size:17px;font-weight:400}
+.order .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px;width:100%}
+.order .cta .btn{flex:1 1 240px;max-width:320px}
+.order .btn-ink{background:var(--ink);color:var(--gold)}.order .btn-ink:hover{color:var(--gold2)}
+.order .btn-l{border:1px solid var(--ink);color:var(--ink)}.order .btn-l:hover{color:var(--ink);background:rgba(10,13,11,.08)}
+.order .handles{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:#3a341f}
+
+/* footer */
+.foot{padding-block:40px calc(110px + env(safe-area-inset-bottom,0px));font-size:12px;color:var(--fg3);line-height:1.85}
+.foot .wrap{display:grid;gap:22px;grid-template-columns:repeat(1,minmax(0,1fr))}
+@media(min-width:800px){.foot .wrap{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:980px){.foot{padding-bottom:48px}}
+.foot b{font-family:var(--serif);font-weight:500;font-size:16px;letter-spacing:.16em;text-transform:uppercase;color:var(--fg)}
+
+/* sticky order bar, phones and tablets only */
+.stick{position:fixed;left:0;right:0;bottom:0;z-index:9;display:flex;align-items:center;gap:14px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(10,13,11,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s ease;visibility:hidden}
+.stick.on{transform:none;visibility:visible}
+.stick>span{flex:1;min-width:0;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg2);line-height:1.5}
+.stick .btn{min-height:48px;padding:0 22px;flex:none}
+@media(min-width:980px){.stick{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* languages */
+html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
+html[lang="en"] .cmp-r .o::before{content:"Usually"}
+.right{display:flex;align-items:center;gap:6px;flex:none}
+.lang{background:none;border:0;color:var(--fg2);font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.2em;min-width:44px;min-height:44px;cursor:pointer;padding:0}
+.lang:hover{color:var(--gold)}
+.sci dt{font-family:var(--serif);font-size:30px;letter-spacing:0;text-transform:none;line-height:1;padding-top:2px}
+.sci dd{font-size:19px}
+.f .v{margin-top:14px}
+.f .d{margin-top:10px}
+.order .handles{margin-top:4px}
+.hero{padding-top:0}
+.heroimg{position:relative;width:100%;max-width:720px;margin:0 auto clamp(18px,3vw,28px)}
+.heroimg img{display:block;width:100%;height:clamp(300px,84vw,620px);object-fit:cover;object-position:50% 80%}
+.heroimg img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 9%,#000 88%,transparent 100%)}
+@media(min-width:760px){.heroimg{margin-top:28px}.heroimg img{-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 100%),linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(180deg,#000 80%,transparent 100%),linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}}
+.wide{display:block;width:100%;max-width:1120px;height:auto;aspect-ratio:3/2;object-fit:cover;margin:0 auto clamp(28px,5vw,56px)}
+.wide.pano{aspect-ratio:16/9}
+.wide.tall{aspect-ratio:1/1;max-width:560px;object-position:62% 40%}
+@media(min-width:760px){.wide.tall{aspect-ratio:1/1}}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity 1s ease,transform 1s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}}
+
+/* editorial pass */
+body{font-weight:400}
+h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{font-variant-numeric:lining-nums}
+.eyebrow{font-size:11px;letter-spacing:.3em}
+.hero .wrap{gap:20px}
+.figure.last{border-bottom:0;padding-bottom:0}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:clamp(40px,7vw,72px)}
+.stats>div{padding:22px 0 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.stats>div+div{padding-left:16px;border-left:1px solid var(--line)}
+.stats b{font-family:var(--serif);font-weight:300;font-size:clamp(34px,6vw,56px);line-height:1;color:var(--fg);white-space:nowrap}
+.stats>div>span{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg3);line-height:1.5}
+.figure .t p{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.2vw,24px);color:var(--fg2)}
+.tl dd{font-size:22px}
+.sci dt{color:var(--gold)}
+.pp .r{grid-template-columns:minmax(0,1fr) auto!important;padding:16px 0}
+.pp .r>span:nth-child(1){font-size:11px!important;letter-spacing:.12em!important}
+.pp .r>span:nth-child(2){font-family:var(--serif);font-size:21px;color:var(--fg)}
+.pp .r>span:nth-child(3){grid-column:2!important;min-width:0!important}
+.pp .r>span:nth-child(3):empty{display:none}
+.note a{color:var(--gold);text-decoration:none}
+.mat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line)}
+.mat>div{padding:22px 0;border-bottom:1px solid var(--line);min-width:0}
+.mat>div:nth-child(odd){padding-right:16px}
+.mat>div:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+.mat h3{font-size:23px;line-height:1.15}
+.mat p{color:var(--fg2);font-size:14px;margin-top:6px;line-height:1.5}
+@media(min-width:900px){.mat{grid-template-columns:repeat(4,minmax(0,1fr))}.mat>div{padding:28px 20px 28px 0!important;border-left:0!important}.mat>div+div{padding-left:20px!important;border-left:1px solid var(--line)!important}}
+.pl{border-top:1px solid var(--line)}
+.pr{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.pr .sz{display:flex;flex-direction:column;gap:4px;min-width:0}
+.pr b{font-family:var(--serif);font-weight:300;font-size:clamp(34px,5vw,44px);line-height:1;color:var(--fg);white-space:nowrap}
+.pr .sz>span{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--fg3)}
+.pr .pc{font-family:var(--serif);font-size:clamp(26px,3.4vw,32px);color:var(--gold2);white-space:nowrap;min-width:3.2em;text-align:right}
+.pr .btn{min-height:46px;padding:0 16px;font-size:10px;letter-spacing:.2em}
+@media(max-width:359px){.pr{grid-template-columns:minmax(0,1fr) auto}.pr .btn{grid-column:1/-1}}
+@media(min-width:760px){.pl{max-width:640px}}
+.wide.tall{object-position:62% 42%}
+.order .cta .btn{max-width:360px}
+.sec{padding-block:clamp(60px,10vw,140px)}
+.sub2{margin:44px 0 14px}
+.sub2.first{margin-top:0}
+.pr .pc{min-width:0}
+.pr.b2b b{font-size:clamp(26px,4vw,38px)}
+.pr.b2b .pc{font-size:clamp(21px,3vw,28px)}
+
+/* graphics pass */
+.wrap.one{display:flex!important;flex-direction:column;gap:26px}
+.split{max-width:520px;width:100%}
+.hx{display:block;width:100%;height:auto;color:var(--gold)}
+.cap{display:grid;grid-template-columns:2fr 3fr;gap:0;margin-top:12px}
+.cap>span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg2);border-top:1px solid var(--line);padding-top:10px;margin:0 4px}
+.cap>span:first-child{color:var(--gold)}
+.lead{font-family:var(--serif);font-style:italic;font-size:clamp(21px,2.4vw,26px);color:var(--fg2)}
+.scs{border-top:1px solid var(--line)}
+.sc{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.sc>span:first-child{font-family:var(--serif);font-size:23px;line-height:1.2;color:var(--fg)}
+.dots{display:flex;gap:9px;flex:none}
+.dots i{width:13px;height:13px;border-radius:50%;border:1px solid var(--gold);display:block}
+.dots i.on{background:var(--gold)}
+.give .eyebrow{margin:0 0 14px}
+.give ul{list-style:none;margin:0 0 34px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}
+.give li{background:var(--bg2);padding:20px 16px;display:flex;flex-direction:column;gap:12px;font-family:var(--serif);font-size:21px;line-height:1.2;color:var(--fg);min-width:0}
+.give li svg{width:22px;height:22px;color:var(--gold);flex:none}
+.give ul.we{grid-template-columns:1fr;margin-bottom:26px}
+.give ul.we li{flex-direction:row;align-items:center;gap:14px;box-shadow:inset 0 0 0 1px var(--gold);background:none}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:6px}
+.vs>div{padding:22px 16px 20px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.vs svg{width:30px;height:30px;margin-bottom:8px}
+.vs b{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.1}
+.vs>div>span{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase}
+.vs-a{background:linear-gradient(150deg,rgba(227,197,126,.20),rgba(201,169,97,.06));box-shadow:inset 0 0 0 1px var(--gold)}.vs-a svg,.vs-a>span{color:var(--gold2)}.vs-a b{color:var(--fg)}
+.vs-b{background:var(--bg2)}.vs-b svg,.vs-b>span{color:var(--fg3)}.vs-b b{color:var(--fg3);text-decoration:line-through;text-decoration-thickness:1px}
+.why-h{margin:30px 0 0}
+.why{list-style:none;margin:12px 0 0;padding:0;border-top:1px solid var(--line)}
+.why li{display:grid;grid-template-columns:54px minmax(0,1fr);gap:12px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.why i{font-style:normal;font-family:var(--serif);font-size:32px;line-height:1;color:var(--gold2);font-variant-numeric:lining-nums}.why i.n{font-size:22px;padding-top:4px;white-space:nowrap}
+.why b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.2;color:var(--fg)}
+.why li div>span{display:block;font-size:13.5px;line-height:1.45;color:var(--fg2);margin-top:4px}
+.why a{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.keep{margin-top:30px}.keep .eyebrow{margin:0 0 12px}.keep .chips+.eyebrow{margin-top:26px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips>span{padding:9px 14px;border:1px solid var(--line);border-radius:999px;font-family:var(--serif);font-size:18px;line-height:1.1;color:var(--fg)}
+.chips.we{margin-bottom:0}.chips.we>span{border-color:var(--gold);color:var(--gold2);background:rgba(201,169,97,.08)}
+@media(min-width:900px){#method .wrap{max-width:860px}}
+.sheet{max-width:620px;margin:6px auto 0;background:linear-gradient(170deg,#f6efdc,#eadfc4);color:#1c1a14;padding:22px 20px 18px;box-shadow:0 30px 60px -30px rgba(0,0,0,.9),0 0 0 1px rgba(201,169,97,.5);position:relative}
+.sheet-h{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding-bottom:14px;border-bottom:1.5px solid #1c1a14}
+.sheet-h small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6b6350;line-height:1.7}
+.sheet-h b{display:block;font-family:var(--mono);font-weight:400;font-size:17px;letter-spacing:.02em;margin:2px 0}
+.seal{flex:none;width:78px;height:78px;border-radius:50%;border:1.5px solid #2f5d46;color:#2f5d46;display:grid;place-items:center;text-align:center;transform:rotate(-8deg);box-shadow:inset 0 0 0 3px #f1e8d2,inset 0 0 0 4px #2f5d46}
+.seal span{font-family:var(--mono);font-size:7.5px;letter-spacing:.1em;text-transform:uppercase;line-height:1.5}.seal b{font-size:15px;margin:0;font-weight:500;letter-spacing:.04em}
+.sheet table{width:100%;border-collapse:collapse;margin-top:6px;font-size:14px}
+.sheet th{font-family:var(--mono);font-weight:400;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#6b6350;text-align:left;padding:10px 0 8px}
+.sheet td{padding:11px 0;border-top:1px solid rgba(28,26,20,.18);vertical-align:baseline;font-weight:400}
+.sheet th:nth-child(n+2),.sheet td:nth-child(n+2){text-align:right;padding-left:10px;white-space:nowrap}
+.sheet td:nth-child(2){font-family:var(--mono);font-size:12px;color:#2f5d46;letter-spacing:.02em}.sheet td:nth-child(2) b{font-size:14px;font-weight:500;color:#1c1a14}
+.sheet td:nth-child(3){font-family:var(--mono);font-size:12px;color:#6b6350}
+.sheet-f{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#6b6350;line-height:1.7;margin-top:14px;padding-top:12px;border-top:1.5px solid #1c1a14}
+.feed{font-family:var(--serif);font-style:italic;font-size:21px;color:var(--fg2)}
+.gauge{padding:20px 0 18px}
+.gh{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.gh>span{color:var(--fg3);letter-spacing:.12em;text-transform:uppercase;font-size:11px}
+.gh b{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--gold2);font-variant-numeric:lining-nums}
+.track{position:relative;height:6px;margin:18px 0 10px;background:rgba(201,169,97,.14);border-radius:3px}
+.track::before{content:"";position:absolute;inset:0 14.3% 0 0;background:linear-gradient(90deg,rgba(201,169,97,.25),rgba(201,169,97,.55));border-radius:3px 0 0 3px}
+.track i{position:absolute;left:31.4%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--gold2);box-shadow:0 0 0 4px var(--bg)}
+.track em{position:absolute;left:85.7%;top:-5px;bottom:-5px;width:1px;background:var(--fg2)}
+.gl{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg3)}
+.wide.plants{margin-top:clamp(36px,6vw,64px);margin-bottom:22px}
+.chips{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{border:1px solid var(--line);padding:9px 14px;font-family:var(--serif);font-size:19px;line-height:1.2;color:var(--fg)}
+.mts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}
+@media(min-width:760px){.mts{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.mt{position:relative;margin:0;overflow:hidden}
+.mt img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.mt::after{content:"";position:absolute;inset:50% 0 0 0;background:linear-gradient(180deg,rgba(10,13,11,0),rgba(10,13,11,.82))}
+.mt figcaption{position:absolute;left:14px;bottom:12px;z-index:1;font-family:var(--serif);font-size:24px;line-height:1;color:var(--fg)}
+.care{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.care>div{padding:24px 0 22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.care>div+div{padding-left:14px;border-left:1px solid var(--line)}
+.care>div:not(:last-child){padding-right:10px}
+.care svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.care b{font-family:var(--serif);font-weight:400;font-size:clamp(24px,5vw,34px);line-height:1;color:var(--fg);font-variant-numeric:lining-nums;white-space:nowrap}
+.care>div>span{font-size:12.5px;line-height:1.45;color:var(--fg2);overflow-wrap:anywhere}
+.order p{font-family:var(--serif);font-size:clamp(20px,2.4vw,24px);font-weight:400;max-width:22em;line-height:1.35}
+.herbhead{margin-top:clamp(48px,8vw,90px)}
+.herbfig{position:relative;margin:0 auto 26px;max-width:720px}
+.herbfig img{display:block;width:100%;height:auto}
+.herbfig i{position:absolute;transform:translate(-50%,-50%);font-family:var(--mono);font-style:normal;font-size:11px;line-height:1;color:var(--ink);background:var(--gold2);min-width:20px;height:20px;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:0 4px}
+.herbs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr)}
+@media(min-width:760px){.herbs{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}}
+.herbs li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line)}
+.herbs li>i{font-family:var(--mono);font-style:normal;font-size:12px;color:var(--gold)}
+.herbs b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.2;color:var(--fg)}
+.herbs li div>span{display:block;font-size:14px;line-height:1.45;color:var(--fg2);margin-top:4px}
+
+.wheel{position:relative;width:calc(100% - 36px);max-width:440px;aspect-ratio:1/1;margin:18px auto 30px}
+.wheel button{position:absolute;width:19%;aspect-ratio:1/1;transform:translate(-50%,-50%);border-radius:50%;padding:0;border:1px solid var(--line);background:var(--bg2);overflow:hidden;cursor:pointer;transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .35s ease,box-shadow .35s ease;-webkit-tap-highlight-color:transparent}
+.wheel button img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.62) saturate(.85);transition:filter .45s ease}
+.wheel button.on{transform:translate(-50%,-50%) scale(1.6);border-color:var(--gold2);box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--gold2);z-index:2}
+.wheel button.on img{filter:none}
+.wheel button:focus-visible{outline:1px solid var(--gold2);outline-offset:3px}
+.hub{position:absolute;inset:27%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px;pointer-events:none}
+.hub i{font-family:var(--mono);font-style:normal;font-size:11px;color:var(--gold);letter-spacing:.1em}
+.hub b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,5.8vw,30px);line-height:1.05;color:var(--fg)}
+.hub>span{font-size:clamp(11.5px,3.1vw,14px);line-height:1.35;color:var(--gold2)}
+@media(prefers-reduced-motion:reduce){.wheel button,.wheel button img{transition:none}}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;margin-bottom:30px}
+.seg button{min-height:52px;background:var(--bg2);border:0;color:var(--fg2);font-family:var(--serif);font-size:21px;font-variant-numeric:lining-nums;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .25s,color .25s}
+.seg button.on{background:var(--gold);color:var(--ink)}
+#beecalc{max-width:640px}
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Ak-Suu</b><span><span class="ru">Высокогорный мёд · Ультра органик</span><span class="en">High Mountains Honey · Ultra Organic</span></span></a>
+    <nav class="links" aria-label="Sections">
+      <a href="#taste"><span class="ru">Вкус</span><span class="en">Taste</span></a>
+      <a href="#method"><span class="ru">Метод</span><span class="en">Method</span></a>
+      <a href="#passport"><span class="ru">Анализ</span><span class="en">Lab</span></a>
+      <a href="#terroir"><span class="ru">Место</span><span class="en">Place</span></a>
+      <a href="#formats"><span class="ru">Банки</span><span class="en">Jars</span></a>
+    </nav>
+    <div class="right">
+      <button class="lang" id="lang" type="button" aria-label="Language"><span class="ru">EN</span><span class="en">RU</span></button>
+      <a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="heroimg"><img src="img/jar.jpg" width="1200" height="1500" alt="Ak-Suu honey" fetchpriority="high"></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="ru">Высокогорный мёд · Тянь-Шань</span><span class="en">High-mountain honey · Tian Shan</span></p>
+    <h1><span class="ru">Мёд, который пчёлы сделали <em>для себя</em></span><span class="en">Honey the bees made <em>for themselves</em></span></h1>
+    <p class="sub"><span class="ru">Пчёлы зимуют на своём мёде. Мы берём излишек.</span><span class="en">The bees winter on their own honey. We take the surplus.</span></p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#jars"><span class="ru">Выбрать банку · от $10</span><span class="en">Choose a jar · from $10</span></a>
+      <a class="btn btn-line" href="https://t.me/aksuu_honey_bot" data-ev="hero"><span class="ru">Заказать в Telegram</span><span class="en">Order in Telegram</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="figure last">
+  <div class="wrap one">
+    <h2 class="h2"><span class="ru">Две тонны из пяти остались пчёлам</span><span class="en">Two tonnes of five stayed with the bees</span></h2>
+    <div class="split">
+      <svg class="hx" viewBox="0 0 500 104" aria-hidden="true"><path d="M50 6 L90 29 V75 L50 98 L10 75 V29 Z" fill="currentColor"/><path d="M150 6 L190 29 V75 L150 98 L110 75 V29 Z" fill="currentColor"/><path d="M250 6 L290 29 V75 L250 98 L210 75 V29 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M350 6 L390 29 V75 L350 98 L310 75 V29 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M450 6 L490 29 V75 L450 98 L410 75 V29 Z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      <div class="cap"><span><span class="ru">2 т пчёлам</span><span class="en">2 t for the bees</span></span><span><span class="ru">3 т в банки</span><span class="en">3 t in jars</span></span></div>
+    </div>
+    <p class="lead"><span class="ru">Сахаром не кормили ни разу.</span><span class="en">Never fed sugar.</span></p>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div><b>370</b><span><span class="ru">всего ульев</span><span class="en">hives in all</span></span></div>
+      <div><b><span class="ru">3 т</span><span class="en">3 t</span></b><span><span class="ru">урожай 2026</span><span class="en">2026 harvest</span></span></div>
+      <div><b><span class="ru">7 т</span><span class="en">7 t</span></b><span><span class="ru">максимум в год</span><span class="en">maximum a year</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="taste">
+  <img class="wide rv" src="img/honey.jpg" width="1500" height="1006" alt="" loading="lazy">
+  <div class="wrap season">
+    <div class="hd">
+      <p class="eyebrow"><span class="ru">Вкус</span><span class="en">Taste</span></p>
+      <h2 class="h2"><span class="ru">Ложку можно съесть, не запивая</span><span class="en">A spoonful you don’t need to wash down</span></h2>
+    </div>
+    <div class="scs">
+      <div class="sc"><span><span class="ru">Густота</span><span class="en">Thickness</span></span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+      <div class="sc"><span><span class="ru">Маслянистость</span><span class="en">Butteriness</span></span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+      <div class="sc"><span><span class="ru">Травяные ноты</span><span class="en">Herbal notes</span></span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+      <div class="sc"><span><span class="ru">Сладость</span><span class="en">Sweetness</span></span><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="method">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Метод</span><span class="en">Method</span></p>
+      <h2 class="h2"><span class="ru">Корм круглый год — их собственный мёд</span><span class="en">Feed all year: their own honey</span></h2>
+    </div>
+    <div class="vs rv">
+      <div class="vs-a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.700 5v10L12 22l-8.700-5V7z" fill="currentColor"/></svg><b><span class="ru">Свой мёд</span><span class="en">Their own honey</span></b><span><span class="ru">круглый год</span><span class="en">all year</span></span></div>
+      <div class="vs-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8.700 5v10L12 22l-8.700-5V7z" fill="none" stroke="currentColor" stroke-width="1.300"/><path d="M5 5l14 14" stroke="currentColor" stroke-width="1.300"/></svg><b><span class="ru">Сахарный сироп</span><span class="en">Sugar syrup</span></b><span><span class="ru">ни разу</span><span class="en">never</span></span></div>
+    </div>
+    <p class="eyebrow why-h"><span class="ru">Почему без сахара</span><span class="en">Why no sugar</span></p>
+    <ul class="why">
+      <li><i>↓</i><div><b><span class="ru">Слабее иммунитет пчёл</span><span class="en">Weaker bee immunity</span></b><span><span class="ru">В сиропе нет веществ пыльцы и прополиса, которые включают гены защиты.</span><span class="en">Syrup lacks the pollen and propolis compounds that switch on defence genes.</span> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3670375" rel="noopener">PNAS · 2013</a></span></div></li>
+      <li><i>≠</i><div><b><span class="ru">Другой состав мёда</span><span class="en">A different honey</span></b><span><span class="ru">Сироп попадает в соты и меняет сахара мёда.</span><span class="en">Syrup ends up in the comb and changes the honey’s sugars.</span> <a href="https://doi.org/10.1002/arch.70052" rel="noopener">Arch. Insect Biochem. · 2025</a></span></div></li>
+      <li><i class="n">46&nbsp;%</i><div><b><span class="ru">импортного мёда в ЕС под подозрением</span><span class="en">of honey imported into the EU is suspect</span></b><span><span class="ru">Партии с признаками добавленного сиропа.</span><span class="en">Consignments with signs of added syrup.</span> <a href="https://joint-research-centre.ec.europa.eu/jrc-news/food-fraud-how-genuine-your-honey-2023-03-23_en" rel="noopener">European Commission · 2023</a></span></div></li>
+    </ul>
+    <div class="keep">
+      <p class="eyebrow"><span class="ru">Остаётся пчёлам</span><span class="en">Stays with the bees</span></p>
+      <div class="chips"><span><span class="ru">Пыльца</span><span class="en">Pollen</span></span><span><span class="ru">Прополис</span><span class="en">Propolis</span></span><span><span class="ru">Маточное молочко</span><span class="en">Royal jelly</span></span><span><span class="ru">Мёд на зиму</span><span class="en">Winter honey</span></span></div>
+      <p class="eyebrow"><span class="ru">Берём мы</span><span class="en">We take</span></p>
+      <div class="chips we"><span><span class="ru">Только излишек мёда</span><span class="en">Only the surplus honey</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="passport">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Анализ</span><span class="en">Lab</span></p>
+      <h2 class="h2"><span class="ru">Антибиотики и пестициды не обнаружены</span><span class="en">No antibiotics, no pesticides</span></h2>
+    </div>
+    <div class="sheet rv">
+      <div class="sheet-h">
+        <div><small><span class="ru">Протокол испытаний</span><span class="en">Test report</span></small><b>№ KG/080.26.00022</b><small><span class="ru">05.08.2026 · мёд урожая 2026</span><span class="en">5 Aug 2026 · honey, harvest 2026</span></small></div>
+        <div class="seal"><span>ISO/IEC<br><b>17025</b><br><span class="ru">аккредитация</span><span class="en">accredited</span></span></div>
+      </div>
+      <table>
+        <thead><tr><th><span class="ru">Показатель</span><span class="en">Parameter</span></th><th><span class="ru">Результат</span><span class="en">Result</span></th><th><span class="ru">Норма</span><span class="en">Limit</span></th></tr></thead>
+        <tbody>
+          <tr><td><span class="ru">Левомицетин</span><span class="en">Chloramphenicol</span></td><td><span class="ru">не обнаружено</span><span class="en">not detected</span></td><td><span class="ru">&lt; 0,0003</span><span class="en">&lt; 0.0003</span></td></tr>
+          <tr><td><span class="ru">Тетрациклин</span><span class="en">Tetracycline</span></td><td><span class="ru">не обнаружено</span><span class="en">not detected</span></td><td><span class="ru">&lt; 0,01</span><span class="en">&lt; 0.01</span></td></tr>
+          <tr><td><span class="ru">ДДТ и метаболиты</span><span class="en">DDT and metabolites</span></td><td><span class="ru">не обнаружено</span><span class="en">not detected</span></td><td><span class="ru">&lt; 0,005</span><span class="en">&lt; 0.005</span></td></tr>
+          <tr><td><span class="ru">ГХЦГ, 3 изомера</span><span class="en">HCH, 3 isomers</span></td><td><span class="ru">не обнаружено</span><span class="en">not detected</span></td><td><span class="ru">&lt; 0,005</span><span class="en">&lt; 0.005</span></td></tr>
+          <tr><td><span class="ru">Массовая доля воды</span><span class="en">Moisture</span></td><td><b><span class="ru">16,2 %</span><span class="en">16.2%</span></b></td><td><span class="ru">&lt; 20 %</span><span class="en">&lt; 20%</span></td></tr>
+        </tbody>
+      </table>
+      <p class="sheet-f"><span class="ru">Выдержка из протокола. Государственная лаборатория: Центр ветеринарной диагностики и экспертизы, Бишкек. Нормы в мг/кг.</span><span class="en">Extract from the report. State laboratory: Centre for Veterinary Diagnostics and Expertise, Bishkek. Limits in mg/kg.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="terroir">
+  <img class="wide pano rv" src="img/apiary.jpg" width="1600" height="904" alt="" loading="lazy">
+  <div class="wrap season">
+    <div class="hd">
+      <p class="eyebrow"><span class="ru">Место</span><span class="en">Place</span></p>
+      <h2 class="h2"><span class="ru">Ущелье <span style="white-space:nowrap">Ак-Суу</span>, Тянь-Шань</span><span class="en"><span style="white-space:nowrap">Ak-Suu</span> gorge, Tian Shan</span></h2>
+      <p><span class="ru">Горные луга и еловый лес на высоте 2&nbsp;100&nbsp;м. Рядом ни одного производства.</span><span class="en">Mountain meadows and spruce forest at 2,100&nbsp;m. Not a single factory nearby.</span></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="head herbhead">
+      <p class="eyebrow"><span class="ru">Медоносы</span><span class="en">Honey plants</span></p>
+      <h2 class="h2"><span class="ru">11 лечебных трав ущелья</span><span class="en">11 healing herbs of the gorge</span></h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="wheel rv" id="wheel"><div class="hub"><i id="hi"></i><b id="hb"></b><span id="hs"></span></div></div>
+  </div>
+</section>
+
+<section class="sec tight" id="craft">
+  <img class="wide rv" src="img/hive.jpg" width="1500" height="996" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Улей</span><span class="en">The hive</span></p>
+      <h2 class="h2"><span class="ru">Только дерево, воск, лён и мох</span><span class="en">Only wood, wax, linen and moss</span></h2>
+    </div>
+    <div class="mts">
+      <figure class="mt"><img src="img/m-wood.jpg" width="700" height="700" alt="" loading="lazy"><figcaption><span class="ru">Дерево</span><span class="en">Wood</span></figcaption></figure>
+      <figure class="mt"><img src="img/m-wax.jpg" width="700" height="700" alt="" loading="lazy"><figcaption><span class="ru">Воск</span><span class="en">Wax</span></figcaption></figure>
+      <figure class="mt"><img src="img/m-linen.jpg" width="700" height="700" alt="" loading="lazy"><figcaption><span class="ru">Лён</span><span class="en">Linen</span></figcaption></figure>
+      <figure class="mt"><img src="img/m-moss.jpg" width="700" height="700" alt="" loading="lazy"><figcaption><span class="ru">Мох</span><span class="en">Moss</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="bees">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Труд пчёл</span><span class="en">The bees’ work</span></p>
+      <h2 class="h2"><span class="ru">Что стоит за одной банкой</span><span class="en">What stands behind one jar</span></h2>
+    </div>
+    <div class="seg" id="beeseg" role="tablist">
+      <button type="button" data-g="100"><span class="ru">100 г</span><span class="en">100 g</span></button>
+      <button type="button" data-g="250"><span class="ru">250 г</span><span class="en">250 g</span></button>
+      <button type="button" data-g="500" class="on"><span class="ru">500 г</span><span class="en">500 g</span></button>
+      <button type="button" data-g="5000"><span class="ru">5 кг</span><span class="en">5 kg</span></button>
+    </div>
+    <div id="beecalc"></div>
+  </div>
+</section>
+
+<section class="sec tight" id="formats">
+  <img class="wide tall rv" src="img/jar-2.jpg" width="1200" height="1500" alt="" loading="lazy">
+  <div class="wrap">
+    <div class="head" id="jars">
+      <p class="eyebrow"><span class="ru">Банки</span><span class="en">Jars</span></p>
+      <h2 class="h2"><span class="ru">Урожай 2026</span><span class="en">Harvest 2026</span></h2>
+    </div>
+    <div class="pl">
+      <div class="pr"><div class="sz"><b><span class="ru">100 г</span><span class="en">100 g</span></b><span><span class="ru">Проба</span><span class="en">Taster</span></span></div><div class="pc">$10</div><a class="btn btn-line" data-sku="j100" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">250 г</span><span class="en">250 g</span></b><span><span class="ru">На стол</span><span class="en">Table</span></span></div><div class="pc">$20</div><a class="btn btn-line" data-sku="j250" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">500 г</span><span class="en">500 g</span></b><span><span class="ru">Домой</span><span class="en">Home</span></span></div><div class="pc">$35</div><a class="btn btn-gold" data-sku="j500" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a></div>
+    </div>
+    <p class="note cx"><span class="ru">Стекло. Доставка не входит в стоимость.</span><span class="en">Glass. Delivery is not included in the price.</span></p>
+  </div>
+</section>
+
+<section class="sec tight" id="year">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">На год</span><span class="en">Annual</span></p>
+      <h2 class="h2"><span class="ru">Запас на год</span><span class="en">A year’s supply</span></h2>
+    </div>
+    <p class="eyebrow sub2 first"><span class="ru">Для семьи</span><span class="en">For a family</span></p>
+    <div class="pl">
+      <div class="pr"><div class="sz"><b><span class="ru">5 кг</span><span class="en">5 kg</span></b></div><div class="pc">$300</div><a class="btn btn-line" data-sku="y5" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">10 кг</span><span class="en">10 kg</span></b></div><div class="pc">$550</div><a class="btn btn-line" data-sku="y10" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+      <div class="pr"><div class="sz"><b><span class="ru">15 кг</span><span class="en">15 kg</span></b></div><div class="pc">$750</div><a class="btn btn-line" data-sku="y15" href="https://t.me/aksuu_honey_bot"><span class="ru">Закрепить</span><span class="en">Reserve</span></a></div>
+    </div>
+    <p class="eyebrow sub2"><span class="ru">Ресторану, отелю, клубу</span><span class="en">Restaurant, hotel, club</span></p>
+    <div class="pl">
+      <div class="pr b2b"><div class="sz"><b><span class="ru">от 20 кг</span><span class="en">from 20 kg</span></b></div><div class="pc"><span class="ru">$45 / кг</span><span class="en">$45 / kg</span></div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Обсудить</span><span class="en">Discuss</span></a></div>
+      <div class="pr b2b"><div class="sz"><b><span class="ru">от 50 кг</span><span class="en">from 50 kg</span></b></div><div class="pc"><span class="ru">$40 / кг</span><span class="en">$40 / kg</span></div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Обсудить</span><span class="en">Discuss</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight" id="faq">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow"><span class="ru">Уход</span><span class="en">Care</span></p>
+      <h2 class="h2"><span class="ru">Как хранить</span><span class="en">How to keep it</span></h2>
+    </div>
+    <div class="care">
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a2 2 0 0 0-2 2v9.3a4 4 0 1 0 4 0V5a2 2 0 0 0-2-2z"/><path d="M12 9v8"/></svg><b>5–20 °C</b><span><span class="ru">температура хранения</span><span class="en">storage temperature</span></span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M4 20L20 4"/></svg><b><span class="ru">Тень</span><span class="en">Shade</span></b><span><span class="ru">без прямого солнца, крышка закрыта</span><span class="en">no direct sun, lid closed</span></span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 5.5 7 5.5 10.5a5.5 5.5 0 0 1-11 0C6.500 10 9 7 12 3z"/><path d="M9.500 14a2.500 2.500 0 0 0 2.500 2.500"/></svg><b>40 °C</b><span><span class="ru">тёплая вода вернёт мёду жидкость</span><span class="en">warm water makes it liquid again</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="order" id="order">
+  <div class="wrap">
+    <h2><span class="ru">Попробуйте один раз</span><span class="en">Try it once</span></h2>
+    <p><span class="ru">Закажите сейчас. Через несколько дней мёд будет на вашем столе.</span><span class="en">Order now. In a few days the honey is on your table.</span></p>
+    <div class="cta">
+      <a class="btn btn-ink" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать в Telegram</span><span class="en">Order in Telegram</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><b>Ak-Suu</b><br><span class="ru">Высокогорный мёд · Ультра органик</span><span class="en">High Mountains Honey · Ultra Organic</span></div>
+    <div><span class="ru">Ак-Суу, Иссык-Кульская область, Кыргызстан</span><span class="en">Ak-Suu, Issyk-Kul Region, Kyrgyzstan</span></div>
+    <div><span class="ru">Мёд натуральный. Хранить при 5–20 °C.</span><span class="en">Natural honey. Store at 5–20 °C.</span><br><a href="https://t.me/aksuu_honey_bot" data-ev="footer">Telegram</a> · <a href="privacy.html"><span class="ru">Конфиденциальность</span><span class="en">Privacy</span></a><br>© 2026 Ak-Suu</div>
+  </div>
+</footer>
+
+<div class="stick" id="stick">
+  <span><span class="ru">Урожай 2026<br>всего 3 т</span><span class="en">Harvest 2026<br>3 t in total</span></span>
+  <a class="btn btn-gold" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать</span><span class="en">Order</span></a>
+</div>
+
+<script src="bees.js?v=11122152"></script>
+<script>
+(function(){
+  var d=document.documentElement,T={ru:'Ak-Suu — высокогорный мёд, Тянь-Шань',en:'Ak-Suu — high-mountain honey, Tian Shan'};
+  document.title=T[d.lang]||T.ru;
+  var SRC=(function(){var q={},v='';try{location.search.slice(1).split('&').forEach(function(p){var a=p.split('=');q[a[0]]=decodeURIComponent((a[1]||'').replace(/\+/g,' '))});
+    v=[q.utm_source,q.utm_medium,q.utm_campaign].filter(Boolean).join('_')||(q.fbclid?'meta':q.gclid?'google':q.yclid?'yandex':q.ttclid?'tiktok':'');
+    if(!v){var r=document.referrer||'';v=/instagram/.test(r)?'instagram':/facebook|fb\.com/.test(r)?'facebook':/youtu/.test(r)?'youtube':/google\./.test(r)?'google_search':/yandex\./.test(r)?'yandex_search':''}
+    v=v.toLowerCase().replace(/[^a-z0-9_]/g,'').slice(0,30);
+    if(v)localStorage.setItem('aksu-src',v);else v=localStorage.getItem('aksu-src')||''}catch(e){}return v})();
+  function botLinks(){var l=d.lang==='ru'?'ru':'en';[].forEach.call(document.querySelectorAll('a[href^="https://t.me/aksuu_honey_bot"]'),function(a){
+    var p=(a.dataset.sku?'o_'+a.dataset.sku+'x1_':'')+l;if(SRC&&p.length+2+SRC.length<=64)p+='--'+SRC;a.href='https://t.me/aksuu_honey_bot?start='+p})}
+  /* счётчики: включаются, если в AK_TRACK вписаны номера */
+  var K=window.AK_TRACK||{};
+  function js(u){var e=document.createElement('script');e.async=true;e.src=u;document.head.appendChild(e)}
+  if(K.meta){window.fbq=function(){fbq.callMethod?fbq.callMethod.apply(fbq,arguments):fbq.queue.push(arguments)};fbq.push=fbq;fbq.loaded=true;fbq.version='2.0';fbq.queue=[];js('https://connect.facebook.net/en_US/fbevents.js');fbq('init',K.meta);fbq('track','PageView')}
+  if(K.ga){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};js('https://www.googletagmanager.com/gtag/js?id='+K.ga);gtag('js',new Date());gtag('config',K.ga)}
+  if(K.ym){window.ym=function(){(ym.a=ym.a||[]).push(arguments)};ym.l=+new Date();js('https://mc.yandex.ru/metrika/tag.js');ym(+K.ym,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true})}
+  function ev(name,data){data=data||{};
+    if(window.fbq)fbq('track',{order:'Lead',jars:'ViewContent'}[name]||'CustomEvent',data);
+    if(window.gtag)gtag('event',{order:'generate_lead',jars:'view_item_list'}[name]||name,data);
+    if(window.ym&&K.ym)ym(+K.ym,'reachGoal',name,data)}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="https://t.me/aksuu_honey_bot"]');if(!a)return;
+    var sec=a.closest('section,header,footer,.stick');ev('order',{content_name:a.dataset.sku||'bot',place:a.dataset.ev||(sec&&(sec.id||sec.className.split(' ')[0]))||''})});
+  (function(){var f=document.getElementById('formats');if(!f||!('IntersectionObserver' in window))return;
+    var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){ev('jars');o.disconnect()}},{threshold:.3});o.observe(f)})();
+  botLinks();
+  document.getElementById('lang').addEventListener('click',function(){
+    var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];botLinks();
+    try{localStorage.setItem('aksu-lang',l)}catch(e){}
+  });
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(e){ro.observe(e)});
+  }else{rv.forEach(function(e){e.classList.add('in')})}
+  (function(){
+    var W=document.getElementById('wheel');if(!W)return;
+    var H=[["Эхиум", "Viper’s bugloss", "Аллантоин: смягчает и заживляет", "Allantoin: soothes and heals"], ["Горная душица", "Wild oregano", "Карвакрол: успокаивает", "Carvacrol: calming"], ["Зизифора", "Ziziphora", "Пулегон: сердце и глубокий сон", "Pulegone: heart and deep sleep"], ["Горный тимьян", "Wild thyme", "Тимол: природный антисептик", "Thymol: a natural antiseptic"], ["Горная герань", "Meadow cranesbill", "Танины: снимают воспаление", "Tannins: ease inflammation"], ["Непета", "Catmint", "Непеталактон: антибактериальный", "Nepetalactone: antibacterial"], ["Зверобой", "St John’s wort", "Гиперфорин: ускоряет заживление", "Hyperforin: speeds healing"], ["Синюха лазоревая", "Jacob’s ladder", "Сапонины: смягчают кашель", "Saponins: soothe coughs"], ["Горный клевер", "Mountain clover", "Изофлавоны: антиоксидант", "Isoflavones: antioxidant"], ["Дикая роза", "Wild rose", "Витамин C: иммунитет", "Vitamin C: immunity"], ["Барбарис", "Barberry", "Берберин: пищеварение", "Berberine: digestion"]],hi=document.getElementById('hi'),hb=document.getElementById('hb'),hs=document.getElementById('hs'),bs=[],cur=0,tm,N=H.length;
+    function sp(a,b){return '<span class="ru">'+a+'</span><span class="en">'+b+'</span>'}
+    function sel(i){cur=i;bs.forEach(function(b,k){b.classList.toggle('on',k===i)});hi.textContent=(i+1)+' / '+N;hb.innerHTML=sp(H[i][0],H[i][1]);hs.innerHTML=sp(H[i][2],H[i][3])}
+    function run(){clearInterval(tm);if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;tm=setInterval(function(){sel((cur+1)%N)},2000)}
+    H.forEach(function(h,i){var a=(i/N)*2*Math.PI-Math.PI/2,b=document.createElement('button');b.type='button';b.setAttribute('aria-label',h[1]);b.style.left=(50+41*Math.cos(a))+'%';b.style.top=(50+41*Math.sin(a))+'%';b.innerHTML='<img src="img/h'+(i+1)+'.jpg" alt="" loading="lazy" width="640" height="640">';b.addEventListener('click',function(){sel(i);run()});W.appendChild(b);bs.push(b)});
+    sel(0);run();
+  })();
+  (function(){
+    var box=document.getElementById('beecalc'),seg=document.getElementById('beeseg');if(!box||!seg||!window.AkBees)return;
+    var g=500,shown=false;
+    function draw(){AkBees.render(box,g,d.lang==='ru'?'ru':'en')}
+    seg.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g=+b.dataset.g;
+      [].forEach.call(seg.children,function(x){x.classList.toggle('on',x===b)});draw()});
+    document.getElementById('lang').addEventListener('click',function(){if(shown)setTimeout(draw,0)});
+    shown=true;draw(); /* at once: drawing it later made the page grow and anchor scrolls stop short */
+  })();
+  /* in-page links: go to the target and re-aim while the page settles (images, fonts) */
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;
+    var t=document.getElementById(a.getAttribute('href').slice(1));if(!t)return;e.preventDefault();
+    var nav=document.querySelector('.nav'),off=(nav?nav.offsetHeight:0)+8;
+    function y(){return Math.max(0,Math.round(t.getBoundingClientRect().top+window.pageYOffset-off))}
+    window.scrollTo({top:y(),behavior:'smooth'});
+    [500,900,1400].forEach(function(ms){setTimeout(function(){var d=Math.abs(y()-window.pageYOffset);if(d>4)window.scrollTo({top:y(),behavior:d>400?'auto':'smooth'})},ms)});
+    try{history.replaceState(null,'','#'+t.id)}catch(x){}});
+  var s=document.getElementById('stick'),h=document.querySelector('.hero .cta'),o=document.getElementById('order');
+  if(!('IntersectionObserver' in window))return;
+  var hv=true,ov=false;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.target===h)hv=e.isIntersecting;else ov=e.isIntersecting});
+    s.classList.toggle('on',!hv&&!ov);
+  });
+  io.observe(h);io.observe(o);
+})();
+</script>
+</html>

@@ -25,6 +25,8 @@
 <script>
 /* Реклама и аналитика. Впишите номера счётчиков между кавычками — и они заработают. Пусто = выключено. */
 window.AK_TRACK={meta:'',ga:'',ym:''};
+/* номер WhatsApp для заказов: только цифры с кодом страны, например '996555123456'. Пусто = кнопки WhatsApp скрыты */
+window.AK_WA='';
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0d0b'/%3E%3Cpath d='M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z' fill='none' stroke='%23c9a961' stroke-width='1.6'/%3E%3C/svg%3E">
 <link rel="preload" as="image" href="img/jar.jpg">
@@ -66,6 +68,8 @@ p{margin:0}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;text-decoration:none;font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;transition:background .2s,color .2s,border-color .2s;text-align:center}
 .btn-gold{background:linear-gradient(135deg,#e6c984 0%,#c9a961 52%,#b38f48 100%);color:var(--ink);box-shadow:0 10px 30px -14px rgba(201,169,97,.55)}.btn-gold:hover{background:var(--gold2);color:var(--ink)}
 .btn-line{border:1px solid var(--gold);color:var(--gold)}.btn-line:hover{border-color:var(--gold2);color:var(--gold2)}
+[hidden]{display:none!important}
+.wa-alt{margin-top:22px;font-size:13px;color:var(--fg3);text-align:center}.wa-alt a{color:var(--gold)}
 .btn:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var(--gold2);outline-offset:4px}
 .cx{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--fg3);text-transform:uppercase;line-height:1.6}
 
@@ -451,6 +455,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     <div class="cta">
       <a class="btn btn-gold" href="#jars"><span class="ru">Выбрать банку · от $10</span><span class="en">Choose a jar · from $10</span></a>
       <a class="btn btn-line" href="https://t.me/aksuu_honey_bot" data-ev="hero"><span class="ru">Заказать в Telegram</span><span class="en">Order in Telegram</span></a>
+      <a class="btn btn-line wa" hidden target="_blank" rel="noopener" data-ev="hero"><span class="ru">Заказать в WhatsApp</span><span class="en">Order on WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -625,6 +630,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
       <div class="pr b2b"><div class="sz"><b><span class="ru">от 20 кг</span><span class="en">from 20 kg</span></b></div><div class="pc"><span class="ru">$45 / кг</span><span class="en">$45 / kg</span></div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Обсудить</span><span class="en">Discuss</span></a></div>
       <div class="pr b2b"><div class="sz"><b><span class="ru">от 50 кг</span><span class="en">from 50 kg</span></b></div><div class="pc"><span class="ru">$40 / кг</span><span class="en">$40 / kg</span></div><a class="btn btn-line" href="https://t.me/aksuu_honey_bot"><span class="ru">Обсудить</span><span class="en">Discuss</span></a></div>
     </div>
+    <p class="wa-alt" hidden><span class="ru">Нет Telegram? <a class="wa" target="_blank" rel="noopener" data-ev="formats">Заказать в WhatsApp</a></span><span class="en">No Telegram? <a class="wa" target="_blank" rel="noopener" data-ev="formats">Order on WhatsApp</a></span></p>
   </div>
 </section>
 
@@ -648,6 +654,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     <p><span class="ru">Закажите сейчас. Через несколько дней мёд будет на вашем столе.</span><span class="en">Order now. In a few days the honey is on your table.</span></p>
     <div class="cta">
       <a class="btn btn-ink" href="https://t.me/aksuu_honey_bot"><span class="ru">Заказать в Telegram</span><span class="en">Order in Telegram</span></a>
+      <a class="btn btn-l wa" hidden target="_blank" rel="noopener" data-ev="order"><span class="ru">Заказать в WhatsApp</span><span class="en">Order on WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -658,7 +665,7 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
   <div class="wrap">
     <div><b>Ak-Suu</b><br><span class="ru">Высокогорный мёд · Ультра органик</span><span class="en">High Mountains Honey · Ultra Organic</span></div>
     <div><span class="ru">Ак-Суу, Иссык-Кульская область, Кыргызстан</span><span class="en">Ak-Suu, Issyk-Kul Region, Kyrgyzstan</span></div>
-    <div><span class="ru">Мёд натуральный. Хранить при 5–20 °C.</span><span class="en">Natural honey. Store at 5–20 °C.</span><br><a href="https://t.me/aksuu_honey_bot" data-ev="footer">Telegram</a> · <a href="privacy.html"><span class="ru">Конфиденциальность</span><span class="en">Privacy</span></a><br>© 2026 Ak-Suu</div>
+    <div><span class="ru">Мёд натуральный. Хранить при 5–20 °C.</span><span class="en">Natural honey. Store at 5–20 °C.</span><br><a href="https://t.me/aksuu_honey_bot" data-ev="footer">Telegram</a> · <span class="wa-w" hidden><a class="wa" target="_blank" rel="noopener" data-ev="footer">WhatsApp</a> · </span><a href="privacy.html"><span class="ru">Конфиденциальность</span><span class="en">Privacy</span></a><br>© 2026 Ak-Suu</div>
   </div>
 </footer>
 
@@ -693,9 +700,15 @@ h1,h2,h3,.figure .n,.tr b,.f .v,.tl dd,.cmp-r .a,.stats b,.pr b,.pr .pc,.sci dt{
     var sec=a.closest('section,header,footer,.stick');ev('order',{content_name:a.dataset.sku||'bot',place:a.dataset.ev||(sec&&(sec.id||sec.className.split(' ')[0]))||''})});
   (function(){var f=document.getElementById('formats');if(!f||!('IntersectionObserver' in window))return;
     var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){ev('jars');o.disconnect()}},{threshold:.3});o.observe(f)})();
-  botLinks();
+  /* WhatsApp: показываем кнопки, только если вписан номер */
+  var WA=String(window.AK_WA||'').replace(/\D/g,'');
+  function waLinks(){if(!WA)return;var m=d.lang==='ru'?'Здравствуйте! Хочу заказать мёд Ak-Suu.':'Hello! I would like to order Ak-Suu honey.';
+    [].forEach.call(document.querySelectorAll('.wa'),function(a){a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(m);a.hidden=false});
+    [].forEach.call(document.querySelectorAll('.wa-w,.wa-alt'),function(e){e.hidden=false})}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.wa');if(a)ev('order',{content_name:'whatsapp',place:a.dataset.ev||''})});
+  botLinks();waLinks();
   document.getElementById('lang').addEventListener('click',function(){
-    var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];botLinks();
+    var l=d.lang==='ru'?'en':'ru';d.lang=l;document.title=T[l];botLinks();waLinks();
     try{localStorage.setItem('aksu-lang',l)}catch(e){}
   });
   var rv=document.querySelectorAll('.rv');
