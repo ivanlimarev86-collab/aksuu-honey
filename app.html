@@ -146,7 +146,7 @@ html[lang="ru"] .en,html[lang="en"] .ru{display:none!important}
     {sku:'y10',g:'year',gr:10000,name:L('10 кг','10 kg'),note:L('Для семьи','For a family'),price:550,h:40},
     {sku:'y15',g:'year',gr:15000,name:L('15 кг','15 kg'),note:L('Для семьи','For a family'),price:750,h:52}
   ];
-  var PM={crypto:L('Криптовалюта','Cryptocurrency'),swift:L('Международный банковский перевод','International bank transfer'),card:L('Карта банка РФ','Russian bank card'),link:L('Оплата по ссылке','Pay by link')};
+  var PM={sbp:L('СБП или Сбер · в рублях','Russia: SBP or Sberbank · in roubles'),kg:L('Бакай Банк, Кыргызстан · в сомах','Kyrgyzstan: Bakai Bank · in soms'),card:L('Перевод на карту Visa · из любой страны','Transfer to a Visa card · from any country'),crypto:L('Криптовалюта · USDT (TRC20)','Crypto · USDT (TRC20)'),swift:L('Международный банковский перевод','International bank transfer'),link:L('Оплата по ссылке','Pay by link')};
   var methods=(q.get('pm')||'').split(',').filter(function(m){return PM[m]});
   var cart={},pay=methods.length===1?methods[0]:'',step=1,order=null;
   var $=function(id){return document.getElementById(id)};
