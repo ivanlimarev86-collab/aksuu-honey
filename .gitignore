@@ -10,6 +10,5 @@ img/*.mp4
 herbs-variants.html
 .env
 bot/
-CNAME.later
 *.bak4
 bot-description-picture.jpg

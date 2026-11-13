@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /app.html
-Sitemap: https://ivanlimarev86-collab.github.io/aksuu-honey/sitemap.xml
+Sitemap: https://aksuuhoney.com/sitemap.xml
